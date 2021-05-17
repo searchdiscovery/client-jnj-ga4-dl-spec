@@ -17,7 +17,7 @@ dataLayer.push({
 ## Variable Definitions
 
 |Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |facets|delimited string|A delimited string of key/value pairs representing the facets that were applied to this search|need:skin health~skin_concern:acne~featured_as:best_seller|
 |result_count|integer|The total number of search results found|324|
 |search_term|string|The final search term submitted after any correction has been performed|sunscreen|

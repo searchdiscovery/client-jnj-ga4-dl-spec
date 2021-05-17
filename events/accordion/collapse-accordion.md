@@ -5,7 +5,7 @@ Fire whenever a user collapses an accordion item.
 ## HTML Data Attributes
 
 ```html
-<a href=""
+<a href="<link_url>"
   data-layer-event="collapse_accordion",
   data-layer-accordion_id="<accordion_id>"
   data-layer-accordion_name="<accordion_name>"

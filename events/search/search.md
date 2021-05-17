@@ -15,10 +15,10 @@ dataLayer.push({
 
 ## Variable Definitions
 
-|Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+|Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|corrected_term|string|The initial search term before typeahead/lookahead/suggestion, if the site has those features.|suns|
-|search_term|string|The final search term submitted after any correction has been performed|sunscreen|
+|corrected_term|string|recommended|The initial search term before typeahead/lookahead/suggestion, if the site has those features.|suns|
+|search_term|string|required|The final search term submitted after any correction has been performed|sunscreen|
 
 ## Notes
 Discussed potentially adding search_type but all searches are global full-text searches so there isn't a search type concept at time of initial search.

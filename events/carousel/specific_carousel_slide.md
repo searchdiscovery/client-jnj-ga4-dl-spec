@@ -29,9 +29,9 @@ dataLayer.push({
 
 ## Variable Definitions
 
-|Field|Type|Description|Example|Required|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+|Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|carousel_id|string|The computer-readible machine name of the carousel. Use UUID provided by the component|12345abcde12345|required|
-|carousel_name|string|The human-readible name of the carousel. If user does not input one, populate with numerical index of which carousel this is on the page (1-indexed)|Most Popular Blog Posts, 2|preferred|
-|slot|integer|The slide # the carousel is on at time of interaction (1-indexed)|1|preferred||1||1
-|target_slot|integer|The slide # of the target slide (1-indexed)|2|required||1||1
+|carousel_id|string|required|The computer-readible machine name of the carousel. Use UUID provided by the component|12345abcde12345|
+|carousel_name|string|recommended|The human-readible name of the carousel. If user does not input one, populate with numerical index of which carousel this is on the page (1-indexed)|Most Popular Blog Posts, 2|
+|slot|integer|recommended|The slide # the carousel is on at time of interaction (1-indexed)|1|preferred||1||1
+|target_slot|integer|recommended|The slide # of the target slide (1-indexed)|2||1||1|

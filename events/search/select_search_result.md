@@ -29,6 +29,6 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|facets|delimited string|recommended|A double-delimited string of key/value pairs representing the refinements that were applied to this search|category:skin_health~skin_concern:acne~featured_as:best_seller|
+|facets|delimited string|recommended|A double-delimited string of key/value pairs representing the refinements that were applied to this search. Note: We have an internal discussion going on delimiters. They may change before go-live if better ones are identified.|category:skin_health~skin_concern:acne~featured_as:best_seller|
 |search_term|string|required|The final search term submitted after any correction has been performed|sunscreen|
 |slot|integer|required|The numerical index of the search result position (1-indexed)|5|

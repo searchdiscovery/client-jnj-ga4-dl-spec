@@ -42,14 +42,14 @@ dataLayer.push({
 ## Variable Definitions
 
 |Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|link_classes|string|The list of HTML/CSS classes applied to the link.|button-red|
-|link_domain|string|The domain of the link.|example.com|
-|link_id|string|The HTML/CSS ID of the link.|submit-button|
-|link_cta_type|string|The type of CTA the link click represents.|view_product, generate_lead|
-|link_url|string|The full URL of the link.|https://www.example.com/form|
-|hash|boolean|Does the link point to a different domain?|false|
-|javascript|boolean|Does the link point to a fragment within the page (jump link)?|false|
-|mailto|boolean|Does the link point to an email address?|false|
-|outbound|boolean|Does the link point to a different domain?|false|
-|telephone|boolean|Does the link point to a telephone number?|false|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
+|link_domain|string|required|The domain of the link.|example.com|
+|link_id|string|required|The HTML/CSS ID of the link.|submit-button|
+|link_cta_type|string|optional|The type of CTA the link click represents.|view_product, generate_lead|
+|link_url|string|required|The full URL of the link.|https://www.example.com/form|
+|hash|boolean|conditional|Does the link point to a different domain?|false|
+|javascript|boolean|conditional|Does the link point to a fragment within the page (jump link)?|false|
+|mailto|boolean|conditional|Does the link point to an email address?|false|
+|outbound|boolean|conditional|Does the link point to a different domain?|false|
+|telephone|boolean|conditional|Does the link point to a telephone number?|false|

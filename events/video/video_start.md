@@ -8,16 +8,15 @@ Fire whenever a user starts a video. This will usually be picked up automaticall
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   event: 'video_start',
-  video_current_time: '{{video_current_time}}',
-  video_duration: '{{video_duration}}',
-  video_percent: '{{video_percent}}',
-  video_provider: '{{video_provider}}',
-  video_title: '{{video_title}}',
-  video_url: '{{video_url}}',
-  visible: '{{visible}}',
+  video_current_time: '<video_current_time>',
+  video_duration: '<video_duration>',
+  video_percent: '<video_percent>',
+  video_provider: '<video_provider>',
+  video_title: '<video_title>',
+  video_url: '<video_url>',
+  visible: '<visible>',
 });
 ```
-
 ## Variable Definitions
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|

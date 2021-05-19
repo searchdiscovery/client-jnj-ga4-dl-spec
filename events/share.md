@@ -31,6 +31,9 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+<<<<<<< HEAD:events/share.md
 |content_type|string|required|The type of content shared|blog, content, home, landing, product|
 |item_id|string|recommended|The product primary ID (SKU or UPC) or the content item UUID|123456|
+=======
+>>>>>>> master:events/share_content.md
 |method|string|required|The platform used to share content|email, facebook, twitter|

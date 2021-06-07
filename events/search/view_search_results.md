@@ -23,4 +23,8 @@ dataLayer.push({
 |facets|delimited string|recommended|A delimited string of key/value pairs representing the facets that were applied to this search|need:skin health\~skin_concern:acne\~featured_as:best_seller|
 |result_count|integer|recommended|The total number of search results found|324|
 |search_term|string|required|The final search term submitted after any correction has been performed|sunscreen|
-|search_type|string|required|The type of search performed|product,site|
+|search_type|string|required|The type of search performed|filter_by_group,product,site|
+
+## Notes
+
+A lot of thought was put into whether to keep this as its own event as it's not in the Google event spec currently and `view_item_list` could potentially cover it. However, `view_item_list` is really only meant for products and doesn't inherently indicate that a search took place. For this reason, this seems the best way to split up the events. This event indicates a search result list was displayed but provides no information about what was in that list. `view_item_list` indicates a list of products was displayed and captures each individual item. If overlap is ever needed for reporting, this could be reworked.

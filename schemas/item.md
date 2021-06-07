@@ -39,8 +39,8 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |item_brand|string|recommended|Item brand|Gucci|
 |item_category|string|recommended|Item Category (context-specific). `item_category2` through `item_category5`can also be used if the item has many categories.|pants|
 |item_id|string|either `item_id` or `item_name` is required|Item ID (context-specific).|SKU_12345|
-|item_list_id|string|contextual|The computer-readible machine name of the list the item showed up in. Use UUID provided by the component if no more specific ID is available.|12345abcde12345|
-|item_list_name|string|contextual|The human-readible name of the item list the item showed up in. If one is not available, populate with numerical index of which list this is on the page (1-indexed). For `filter_by_group` component, use that value.|filter_by_group, recommended_products, recently_viewed_products|
+|item_list_id|string|contextual|The computer-readible machine name of the list the item showed up in (if sent with a view_item_list event). Use UUID provided by the component if no more specific ID is available.|12345abcde12345|
+|item_list_name|string|contextual|The human-readible name of the item list the item showed up in (if sent with a view_item_list event). If one is not available, populate with numerical index of which list this is on the page (1-indexed). For `filter_by_group` component, use that value.|filter_by_group, recommended_products, recently_viewed_products|
 |item_name|string|either `item_id` or `item_name` is required|Item Name (context-specific).|jeggings|
 |item_variant|string|recommended|The variant of the item.|Black|
 |location_id|string|recommended if the item is associated with a physical location|The location associated with the event. If possible, set to the Google Place ID that corresponds to the associated item. Can also be overridden to a custom location ID string.|L_12345|

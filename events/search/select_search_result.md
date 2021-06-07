@@ -21,6 +21,7 @@ dataLayer.push({
   event: "select_search_result",
   facets: "<facets>",
   search_term: "<search_term>",
+  search_type: "<search_type>",
   slot: "<slot>",
 });
 ```
@@ -31,4 +32,5 @@ dataLayer.push({
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |facets|delimited string|recommended|A double-delimited string of key/value pairs representing the refinements that were applied to this search. Note: We have an internal discussion going on delimiters. They may change before go-live if better ones are identified.|category:skin_health~skin_concern:acne~featured_as:best_seller|
 |search_term|string|required|The final search term submitted after any correction has been performed|sunscreen|
+|search_type|string|required|The type of search performed|site, filter_by_group|
 |slot|integer|required|The numerical index of the search result position (1-indexed)|5|

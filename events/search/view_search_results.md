@@ -1,6 +1,8 @@
 # View Search Results
 
-Fire whenever a user views search results. This includes product searches, content searches, resource searches, etc. and does not require a search event to be fired prior to it.
+Fire whenever a user views search results. This includes product searches, content searches, resource searches, etc. and does not require a search event to be fired prior to it. 
+
+This event should also be fired for the "Filter By Group" component whenever the list is initially displayed or updated after a facet is applied. When used in this way, the search_term parameter should always be `filter_by_group` as that component does not currently allow for a search_term to be entered by the user.
 
 ## Javascript Code
 
@@ -11,6 +13,7 @@ dataLayer.push({
   facets: "<refinements>",
   result_count: "<result_count>",
   search_term: "<search_term>",
+  search_type: "<search_type>",
 });
 ```
 
@@ -21,3 +24,4 @@ dataLayer.push({
 |facets|delimited string|recommended|A delimited string of key/value pairs representing the facets that were applied to this search|need:skin health\~skin_concern:acne\~featured_as:best_seller|
 |result_count|integer|recommended|The total number of search results found|324|
 |search_term|string|required|The final search term submitted after any correction has been performed|sunscreen|
+|search_type|string|required|The type of search performed|site, filter_by_group|

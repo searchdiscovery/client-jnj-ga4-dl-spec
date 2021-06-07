@@ -32,5 +32,5 @@ dataLayer.push({
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |content_type|string|required|The type of content shared|blog, content, home, landing, product|
-|item_id|string|recommended|An identifier for the item that was selected. For products, use the product primary ID (SKU or UPC)|123456|
+|item_id|string|recommended|The product primary ID (SKU or UPC) if it is a product being shared|123456|
 |method|string|required|The platform used to share content|email, facebook, twitter|

@@ -2,6 +2,8 @@
 
 Fire whenever a user expands an accordion item.
 
+If using data attributes, the `data-layer-event` attribute should be dynamically updated from `collapse_accordion` to `expand_accordion` whenever the accordion is collapsed so this event will fire.
+
 ## HTML Data Attributes
 
 ```html

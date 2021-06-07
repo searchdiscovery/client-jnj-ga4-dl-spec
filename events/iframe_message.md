@@ -9,7 +9,6 @@ window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   event: 'iframe_message',
   iframe_category: "<iframe_category>",
-  iframe_category2: "<iframe_category2>",
   iframe_classes: "<iframe_classes>",
   iframe_domain: "<iframe_domain>",
   iframe_element: "<iframe_element>",
@@ -24,7 +23,7 @@ dataLayer.push({
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |iframe_category|string|recommended|The general category of the iFrame.|Where to Buy Widget, Audio|
-|iframe_category2|string|recommended|The subcategory of the iFrame.|Shoppable, Podcast|
+|iframe_category2|string|recommended|The subcategory of the iFrame. `iframe_category3` through `iframe_category5` can also be used if the iframe has many categories.|Shoppable, Podcast|
 |iframe_classes|string|contextual|The iFrame CSS classes.|audio-embed|
 |iframe_domain|string|required|The hostname of the iFrame source.|`vimeo.com`| 
 |iframe_element|[HTMLIFrameElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement)|required|The iFrame HTML element.|`<iframe src="neutrogena.com/iframe" ...>`|

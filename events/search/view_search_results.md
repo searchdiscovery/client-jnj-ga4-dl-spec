@@ -1,9 +1,8 @@
 # View Search Results
 
-Fire whenever a user views search results. This includes product searches, content searches, resource searches, etc. and does not require a search event to be fired prior to it. 
+Fire whenever a user views search results. This includes product searches, content searches, resource searches, etc. and does not require a search event to be fired prior to it.
 
-This event should also be fired for the "Filter By Group" component whenever the list is initially displayed or updated after a facet is applied. When used in this way, the search_term parameter should always be `filter_by_group` as that component does not currently allow for a search_term to be entered by the user.
-
+This event should also be considered for the "Filter By Group" component if it is ever used to display anything but products. When used in this way, the search_term parameter would be `filter_by_group` as that component does not currently allow for a search_term to be entered by the user. If this case does arise, contact Search Discovery for additional information.
 ## Javascript Code
 
 ```js

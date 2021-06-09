@@ -12,7 +12,7 @@ dataLayer.push({
   event: "view_item",
   currency: "<currency>",
   items: "<items>",
-  value: "value"
+  value: "<value>"
 });
 ```
 

@@ -19,8 +19,6 @@ dataLayer.push({
   page_type: 'page_type',
   region: 'region',
   site_section: 'site_section',
-  site_section2: 'site_section2',
-  site_section3: 'site_section3',
   user_id: 'user_id',
 });
 ```
@@ -36,7 +34,7 @@ dataLayer.push({
 |page_referrer|string|required|The previous page URL, generally available in `document.referrer`|https://www.neutrogena.com|
 |page_title|string|required|The title of the page currently being viewed, generally available in `<title>`.|https://www.neutrogena.com|
 |region|string|required|The region the site is associated with.|EMEA|
-|site_section|string|recommended|The section of the site that the current page resides in.|products|
+|site_section|string|recommended|The section of the site that the current page resides in. `site_section2` through `site_section5`can also be used if the site has many sections.|products|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
 
 ## Notes

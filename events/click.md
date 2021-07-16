@@ -18,6 +18,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-hash="<hash>"
   data-layer-javascript="<javascript>"
   data-layer-mailto="<mailto>"
+  data-layer-method="<method>"
   data-layer-outbound="<outbound>"
   data-layer-telephone="<telephone>"
 >
@@ -36,6 +37,7 @@ dataLayer.push({
   hash: "<hash>",
   javascript: "<javascript>",
   mailto: "<mailto>",
+  method: "<method>",
   outbound: "<outbound>",
   telephone: "<telephone>",
 });
@@ -48,10 +50,11 @@ dataLayer.push({
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
-|link_cta_type|string|optional|The type of CTA the link click represents.|view_product, generate_lead|
+|link_cta_type|string|optional|The type of CTA the link click represents.|view_product, generate_lead, visit_social|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|
 |hash|boolean|conditional|Does the link point to a different domain?|false|
 |javascript|boolean|conditional|Does the link point to a fragment within the page (jump link)?|false|
 |mailto|boolean|conditional|Does the link point to an email address?|false|
+|method|string|required|Combine with link_cta_type to provide additional context to the link|facebook, twitter|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
 |telephone|boolean|conditional|Does the link point to a telephone number?|false|

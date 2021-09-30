@@ -11,7 +11,7 @@ This could be done with data attributes and detected via GTM at DOM Ready, but i
 ```js
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
-  event: 'submit_form',
+  event: 'view_form',
   event_specific_id: '<event_specific_id>',
   event_specific_name: '<event_specific_name>',
   event_specific_type: '<event_specific_type>'

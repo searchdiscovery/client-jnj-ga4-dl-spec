@@ -11,11 +11,11 @@ It is important to note that the `step_choice` attrbiute which can possibly incl
 ```js
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
-  event: 'survey_complete',
+  event: 'complete_survey_step',
   event_specific_id: '<event_specific_id>',
   event_specific_name: '<event_specific_name>',
   step_choice: '<step_choice>',  // Only radio buttons or select lists
-  step_name: '<step_name>,
+  step_name: '<step_name>',
   step_number: 1
 });
 ```

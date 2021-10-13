@@ -9,18 +9,16 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 ```html
 <a href="<link_url>"
   data-layer-event="click"
-  data-layer-link_classes="<link_classes>"
-  data-layer-link_domain="<link_domain>"
-  data-layer-link_id="<link_id>"
+  data-layer-component_ancestry="<component_ancestry>"
   data-layer-link_cta_type="<link_cta_type>"
   data-layer-link_url="<link_url>"
-  data-layer-download="<download>"
-  data-layer-hash="<hash>"
-  data-layer-javascript="<javascript>"
-  data-layer-mailto="<mailto>"
-  data-layer-method="<method>"
+  data-layer-link_id="<link_id>"
+  data-layer-link_classes="<link_classes>"
+  data-layer-link_text="<link_text>"
+  data-layer-link_href_type="<link_href_type>"
+  data-layer-navigation_ancestry="<navigation_ancestry>"
   data-layer-outbound="<outbound>"
-  data-layer-telephone="<telephone>"
+  data-layer-region_ancestry="<region_ancestry>"
 >
 ```
 
@@ -30,16 +28,16 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   event: "click",
-  link_classes: "<link_classes>",
-  link_domain: "<link_domain>",
-  link_id: "<link_id>",
+  component_ancestry: "<component_ancestry>",
+  link_cta_type: "<link_cta_type>",
   link_url: "<link_url>",
-  hash: "<hash>",
-  javascript: "<javascript>",
-  mailto: "<mailto>",
-  method: "<method>",
+  link_id: "<link_id>",
+  link_classes: "<link_classes>",
+  link_text: "<link_text>",
+  link_href_type: "<link_href_type>",
+  navigation_ancestry: "<navigation_ancestry>",
   outbound: "<outbound>",
-  telephone: "<telephone>",
+  region_ancestry: "<region_ancestry>",
 });
 ```
 
@@ -47,14 +45,13 @@ dataLayer.push({
 
 |Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel
+|link_cta_type|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
+|link_href_type|string|recommended|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
-|link_cta_type|string|optional|The type of CTA the link click represents.|view_product, generate_lead, visit_social|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|
-|hash|boolean|conditional|Does the link point to a different domain?|false|
-|javascript|boolean|conditional|Does the link point to a fragment within the page (jump link)?|false|
-|mailto|boolean|conditional|Does the link point to an email address?|false|
-|method|string|required|Combine with link_cta_type to provide additional context to the link|facebook, twitter|
+|navigation_ancestry|string|recommended|A delimited string showing all navigation items in the ancestry of link clicked in a multi-tiered menu|about~our leadership~our CEO|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
-|telephone|boolean|conditional|Does the link point to a telephone number?|false|
+|region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation

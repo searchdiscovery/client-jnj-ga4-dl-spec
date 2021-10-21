@@ -1,0 +1,1 @@
+./events/promotions/select_promotion.md

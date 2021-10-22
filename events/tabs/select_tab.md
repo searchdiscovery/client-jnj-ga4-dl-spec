@@ -1,6 +1,6 @@
 # Select Tab
 
-Fire whenever a user selects an tab item.
+Fire whenever a user selects a tab item.
 
 ## HTML Data Attributes
 

@@ -1,6 +1,6 @@
-# Expand Tab
+# Select Tab
 
-Fire whenever a user expands an tab item.
+Fire whenever a user selects an tab item.
 
 ## HTML Data Attributes
 

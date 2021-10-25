@@ -1,15 +1,13 @@
-# View Item
+# Add To Cart
 
-Fire whenever a user visits a product detail page.
-
-This event will eventually fully replace the "Product Viewed" event currently being sent on product detail pages. For now, we'd like to have both implemented so the changeover is simple when it's time to do so. Given that, this is a relatively low priority event to implement.
+Fire whenever a user adds one or more items to their cart.
 
 ## Javascript Code
 
 ```js
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
-  event: "view_item",
+  event: "add_to_cart",
   currency: "<currency>",
   items: "<items>",
   value: "<value>"

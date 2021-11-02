@@ -6,16 +6,19 @@ Fire whenever a refund is issued.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "purchase",
-  affiliation: "<affiliation>",
-  coupon: "<coupon>",
-  currency: "<currency>",
-  items: "<items>",
-  shipping: "<shipping>",
-  tax: "<tax>",
-  transaction_id: "<transaction_id>",
-  value: "<value>"
+  ecommerce: {
+    affiliation: "<affiliation>",
+    coupon: "<coupon>",
+    currency: "<currency>",
+    items: "<items>",
+    shipping: "<shipping>",
+    tax: "<tax>",
+    transaction_id: "<transaction_id>",
+    value: "<value>"
+  }
 });
 ```
 

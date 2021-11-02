@@ -26,16 +26,19 @@ Do not fire this event for product links found in menus.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "select_item",
-  facets: "<facets>",
-  items: "<items>",
-  item_list_id: "<item_list_id>",
-  item_list_name: "<item_list_name>",
-  list_type: "<list_type>",
-  search_term: "<search_term>",
-  search_type: "<search_type>",
-  slot: "<slot>",
+  ecommerce: {
+    facets: "<facets>",
+    items: "<items>",
+    item_list_id: "<item_list_id>",
+    item_list_name: "<item_list_name>",
+    list_type: "<list_type>",
+    search_term: "<search_term>",
+    search_type: "<search_type>",
+    slot: "<slot>",
+  }
 });
 ```
 

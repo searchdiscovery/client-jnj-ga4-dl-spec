@@ -6,13 +6,16 @@ Fire whenever a user submits their shipping information.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_shipping_info",
-  coupon: "<coupon>",
-  currency: "<currency>",
-  items: "<items>",
-  shipping_tier: "<shipping_tier>",
-  value: "<value>"
+  ecommerce: {
+    coupon: "<coupon>",
+    currency: "<currency>",
+    items: "<items>",
+    shipping_tier: "<shipping_tier>",
+    value: "<value>"
+  }
 });
 ```
 

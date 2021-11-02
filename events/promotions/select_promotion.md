@@ -21,13 +21,16 @@ Promotions do not have a solid definition at the moment and are likely to be def
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "select_promotion",
-  facets: "<facets>",
-  list_type: "<list_type>",
-  search_term: "<search_term>",
-  search_type: "<search_type>",
-  slot: "<slot>",
+  ecommerce: {
+    facets: "<facets>",
+    list_type: "<list_type>",
+    search_term: "<search_term>",
+    search_type: "<search_type>",
+    slot: "<slot>",
+  }
 });
 ```
 

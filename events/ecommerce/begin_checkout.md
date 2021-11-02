@@ -6,12 +6,15 @@ Fire whenever a user begins a checkout.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "begin_checkout",
-  coupon: "<coupon>",
-  currency: "<currency>",
-  items: "<items>",
-  value: "<value>"
+  ecommerce: {
+    coupon: "<coupon>",
+    currency: "<currency>",
+    items: "<items>",
+    value: "<value>"
+  }
 });
 ```
 

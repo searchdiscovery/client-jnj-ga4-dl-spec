@@ -8,15 +8,18 @@ This event should also be fired for the "Filter By Group" component when the lis
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "view_item_list",
-  facets: "<facets>",
-  items: "<items>",
-  item_list_id: "<item_list_id>",
-  item_list_name: "<item_list_name>",
-  list_type: "<list_type>",
-  search_term: "<search_term>",
-  search_type: "<search_type>",
+  ecommerce: {
+    facets: "<facets>",
+    items: "<items>",
+    item_list_id: "<item_list_id>",
+    item_list_name: "<item_list_name>",
+    list_type: "<list_type>",
+    search_term: "<search_term>",
+    search_type: "<search_type>",
+  }
 });
 ```
 

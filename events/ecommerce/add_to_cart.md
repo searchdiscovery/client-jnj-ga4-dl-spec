@@ -6,11 +6,14 @@ Fire whenever a user adds one or more items to their cart.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_cart",
-  currency: "<currency>",
-  items: "<items>",
-  value: "<value>"
+  ecommerce: {
+    currency: "<currency>",
+    items: "<items>",
+    value: "<value>"
+  }
 });
 ```
 

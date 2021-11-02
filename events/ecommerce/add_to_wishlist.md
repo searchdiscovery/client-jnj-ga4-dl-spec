@@ -6,11 +6,14 @@ Send when a user adds an item to their wishlist.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_wishlist",
-  currency: "<currency>",
-  items: "<items>",
-  value: "<value>"
+  ecommerce: {
+    currency: "<currency>",
+    items: "<items>",
+    value: "<value>"
+  }
 });
 ```
 

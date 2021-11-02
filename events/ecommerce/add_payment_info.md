@@ -8,8 +8,8 @@ Fire whenever a user submits their payment information.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
+  event: "add_payment_info",
   ecommerce: {
-    event: "add_payment_info",
     coupon: "<coupon>",
     currency: "<currency>",
     items: "<items>",

@@ -8,11 +8,14 @@ This event will eventually fully replace the "Product Viewed" event currently be
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "view_item",
-  currency: "<currency>",
-  items: "<items>",
-  value: "<value>"
+  ecommerce: {
+    currency: "<currency>",
+    items: "<items>",
+    value: "<value>"
+  }
 });
 ```
 

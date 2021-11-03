@@ -6,13 +6,16 @@ Fire whenever a user submits their payment information.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_payment_info",
-  coupon: "<coupon>",
-  currency: "<currency>",
-  items: "<items>",
-  payment_type: "<payment_type>",
-  value: "<value>"
+  ecommerce: {
+    coupon: "<coupon>",
+    currency: "<currency>",
+    items: "<items>",
+    payment_type: "<payment_type>",
+    value: "<value>"
+  }
 });
 ```
 

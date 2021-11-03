@@ -8,7 +8,7 @@ Fire whenever a refund is issued.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "purchase",
+  event: "refund",
   ecommerce: {
     affiliation: "<affiliation>",
     coupon: "<coupon>",

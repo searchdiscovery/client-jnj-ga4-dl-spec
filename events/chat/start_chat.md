@@ -8,8 +8,11 @@ Fire whenever a user initiates a chat session.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   event: 'start_chat',
-  event_specific_id: '<event_specific_id>',
-  event_specific_name: '<event_specific_name>',
+  event_data: {
+    event_specific_id: '<event_specific_id>',
+    event_specific_name: '<event_specific_name>',
+    event_specific_type: '<event_specific_type>'
+  }
 });
 ```
 

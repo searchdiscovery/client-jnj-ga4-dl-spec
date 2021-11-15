@@ -21,14 +21,17 @@ Do not fire this event for content links found in menus.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "select_content",
-  content_type: "<content_type>",
-  facets: "<facets>",
-  list_type: "<list_type>",
-  search_term: "<search_term>",
-  search_type: "<search_type>",
-  slot: "<slot>",
+  event_data: {
+    content_type: "<content_type>",
+    facets: "<facets>",
+    list_type: "<list_type>",
+    search_term: "<search_term>",
+    search_type: "<search_type>",
+    slot: "<slot>",
+  }
 });
 ```
 

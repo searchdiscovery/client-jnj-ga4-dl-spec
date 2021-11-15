@@ -19,11 +19,14 @@ The parameters page_title and page_location are automatically sent along on each
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'share',
-  content_type: '<content_type>',
-  item_id: '<item_id>',
-  method: '<method>'
+  event_data: {
+    content_type: '<content_type>',
+    item_id: '<item_id>',
+    method: '<method>'
+  }
 });
 ```
 

@@ -6,11 +6,14 @@ Fire whenever a user is presented with a chat prompt on a page.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'view_chat',
-  event_specific_id: '<event_specific_id>',
-  event_specific_name: '<event_specific_name>',
-  event_specific_type: '<event_specific_type>'
+  event_data: {
+    event_specific_id: '<event_specific_id>',
+    event_specific_name: '<event_specific_name>',
+    event_specific_type: '<event_specific_type>'
+  }
 });
 ```
 

@@ -6,9 +6,12 @@ Fire whenever a user selects a drug indication or specialty.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'select_indication',
-  indication: '<indication>',
+  event_data: {
+    indication: '<indication>',
+  }
 });
 ```
 

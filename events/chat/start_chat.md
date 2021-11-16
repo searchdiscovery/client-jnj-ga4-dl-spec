@@ -6,6 +6,7 @@ Fire whenever a user initiates a chat session.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'start_chat',
   event_data: {

@@ -6,7 +6,7 @@ Fire whenever a user interacts with the previous carousel slide control
 
 ```html
 <a href="<link_url>"
-  data-layer-event="next_carousel_slide"
+  data-layer-event="previous_carousel_slide"
   data-layer-carousel_id="<carousel_id>"
   data-layer-carousel_name="<carousel_name>"
   data-layer-slot="<slot>"

@@ -6,11 +6,14 @@ Fire whenever a user performs a search of any kind. This includes product search
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "search",
-  corrected_term: "<corrected_term>"
-  search_term: "<search_term>",
-  search_type: "<search_type>",
+  event_data: {
+    corrected_term: "<corrected_term>"
+    search_term: "<search_term>",
+    search_type: "<search_type>",
+  }
 });
 ```
 

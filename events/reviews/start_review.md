@@ -8,9 +8,12 @@ An [item](/schemas/item) object should be included, but not as a separate proper
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'start_review',
-  ...item
+  event_data: {
+    ...item
+  }
 });
 ```
 

@@ -6,15 +6,18 @@ Fire whenever an iframe emits a message using the `window.postMessage` method.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'iframe_message',
-  iframe_category: "<iframe_category>",
-  iframe_classes: "<iframe_classes>",
-  iframe_domain: "<iframe_domain>",
-  iframe_element: "<iframe_element>",
-  iframe_id: "<iframe_id>",
-  iframe_payload: "<iframe_payload>",
-  iframe_url: "<iframe_url>",
+  event_data: {
+    iframe_category: "<iframe_category>",
+    iframe_classes: "<iframe_classes>",
+    iframe_domain: "<iframe_domain>",
+    iframe_element: "<iframe_element>",
+    iframe_id: "<iframe_id>",
+    iframe_payload: "<iframe_payload>",
+    iframe_url: "<iframe_url>",
+  }
 });
 ```
 

@@ -8,10 +8,14 @@ This event is fired when form input is successfully received and process. This i
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'form_complete',
-  event_specific_id: '<event_specific_id>',
-  event_specific_name: '<event_specific_name>',
+  event_data: {
+    event_specific_id: '<event_specific_id>',
+    event_specific_name: '<event_specific_name>',
+    event_specific_type: '<event_specific_type>'
+  }
 });
 ```
 

@@ -17,12 +17,15 @@ Fire whenever a user selects a tab item.
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "select_tab",
-  event_specific_id: "<event_specific_id>",
-  event_specific_name: "<event_specific_name>",
-  event_specific_heading: "<event_specific_heading>",
-  slot: "<slot>",
+  event_data: {
+    event_specific_id: "<event_specific_id>",
+    event_specific_name: "<event_specific_name>",
+    event_specific_heading: "<event_specific_heading>",
+    slot: "<slot>",
+  }
 });
 ```
 

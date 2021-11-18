@@ -18,12 +18,15 @@ If using data attributes, the `data-layer-event` attribute should be dynamically
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "expand_accordion",
-  accordion_id: "<accordion_id>",
-  accordion_name: "<accordion_name>",
-  accordion_heading: "<accordion_heading>",
-  slot: "<slot>",
+  event_data: {
+    accordion_id: "<accordion_id>",
+    accordion_name: "<accordion_name>",
+    accordion_heading: "<accordion_heading>",
+    slot: "<slot>",
+  }
 });
 ```
 

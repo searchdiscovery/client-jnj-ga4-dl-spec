@@ -7,12 +7,15 @@ This event should also be considered for the "Filter By Group" component if it i
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "view_search_results",
-  facets: "<refinements>",
-  result_count: "<result_count>",
-  search_term: "<search_term>",
-  search_type: "<search_type>",
+  event_data: {
+    facets: "<refinements>",
+    result_count: "<result_count>",
+    search_term: "<search_term>",
+    search_type: "<search_type>",
+  }
 });
 ```
 

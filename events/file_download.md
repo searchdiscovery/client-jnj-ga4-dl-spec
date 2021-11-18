@@ -28,20 +28,23 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 
 ```js
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "file_download",
-  component_ancestry: "<component_ancestry>",
-  file_extension: "<file_extension>",
-  file_name: "<file_name>",
-  link_cta_type: "<link_cta_type>",
-  link_url: "<link_url>",
-  link_id: "<link_id>",
-  link_classes: "<link_classes>",
-  link_text: "<link_text>",
-  link_href_type: "<link_href_type>",
-  navigation_ancestry: "<navigation_ancestry>",
-  outbound: "<outbound>",
-  region_ancestry: "<region_ancestry>",
+  event_data: {
+    component_ancestry: "<component_ancestry>",
+    file_extension: "<file_extension>",
+    file_name: "<file_name>",
+    link_cta_type: "<link_cta_type>",
+    link_url: "<link_url>",
+    link_id: "<link_id>",
+    link_classes: "<link_classes>",
+    link_text: "<link_text>",
+    link_href_type: "<link_href_type>",
+    navigation_ancestry: "<navigation_ancestry>",
+    outbound: "<outbound>",
+    region_ancestry: "<region_ancestry>",
+  }
 });
 ```
 

@@ -37,8 +37,7 @@ dataLayer.push({
 |page_category|string|required|Used for grouping pages (or screens) into high level categories.|article,blog,homepage,product|
 |page_location|string|required|The url of the page currently being viewed.|https://www.neutrogena.com|
 |page_referrer|string|required|The previous page URL, generally available in `document.referrer`|https://www.neutrogena.com|
-|page_title|string|required|The title of the page currently being viewed, generally available in `<title>`.|https://www.neutrogena.com|
-|page_title|string|required|The low-level, client-defined name of the page currently being viewed.|homepage,search results,product:neutrogena hydro boost gel|
+|page_title|string|required|The title of the page currently being viewed, generally available in `<title>`; alternatively, the low-level, client-defined name of the page currently being viewed.|homepage,search results,product:neutrogena hydro boost gel|
 |region|string|required|The region the site is associated with.|EMEA|
 |site_section|string|recommended|The section of the site that the current page resides in. `site_section2` through `site_section5`can also be used if the site has many sections.|products|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|

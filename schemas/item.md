@@ -27,6 +27,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "location_id": "<location_id>",
   "promotion_id": "<promotion_id>",
   "promotion_name": "<promotion_name>",
+  "item_subscription_type": "<promotion_id>"
 }
 ```
 
@@ -51,3 +52,4 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |promotion_id|string|either `promotion_id` or `promotion_name` is required if item is being sent with a promotion event|The ID of a product promotion. |P_12345|
 |promotion_name|string|either `promotion_id` or `promotion_name` is required if item is being sent with a promotion event|The name of a product promotion. One of `promotion_id` or `promotion name` is required.|Summer Sale|
 |quantity|integer|recommended|Item quantity.|1|
+|item_subscription_type|string|recommended|Item Subscription Type. The subscription type when a user chooses to subscribe to a product being sent multiple times after their purchase.|3-months, 6-months, 9-months|

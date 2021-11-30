@@ -16,6 +16,7 @@ dataLayer.push({
   event_data: {
     event_specific_id: '<event_specific_id>',
     event_specific_name: '<event_specific_name>',
+    event_specific_type: '<event_specific_type>',
     step_choice: '<step_choice>',  // Only radio buttons or select lists
     step_name: '<step_name>',
     step_number: 1

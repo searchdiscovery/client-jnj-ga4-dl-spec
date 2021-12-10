@@ -1,1 +1,1 @@
-./events/promotions/select_promotion.md
+[See "Select Promotion" Event](/events/promotions/select_promotion.md)

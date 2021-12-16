@@ -12,7 +12,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-component_ancestry="<component_ancestry>"
   data-layer-file_extension="<file_extension>"
   data-layer-file_name="<file_name>"
-  data-layer-link_cta_type="<link_cta_type>"
+  data-layer-link_cta_id="<link_cta_id>"
   data-layer-link_url="<link_url>"
   data-layer-link_id="<link_id>"
   data-layer-link_classes="<link_classes>"
@@ -35,7 +35,7 @@ dataLayer.push({
     component_ancestry: "<component_ancestry>",
     file_extension: "<file_extension>",
     file_name: "<file_name>",
-    link_cta_type: "<link_cta_type>",
+    link_cta_id: "<link_cta_id>",
     link_url: "<link_url>",
     link_id: "<link_id>",
     link_classes: "<link_classes>",

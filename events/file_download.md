@@ -55,7 +55,7 @@ dataLayer.push({
 |component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel|
 |file_extension|string|recommended|The file extension of the file being downloaded.|pdf|
 |file_name|string|recommended|The filename of the file being downloaded.|drug_facts.pdf|
-|link_cta_type|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
+|link_cta_id|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_href_type|string|recommended|

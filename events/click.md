@@ -49,7 +49,7 @@ dataLayer.push({
 |Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel
-|link_cta_type|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
+|link_cta_id|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_href_type|string|recommended|

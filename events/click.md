@@ -10,7 +10,8 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 <a href="<link_url>"
   data-layer-event="click"
   data-layer-component_ancestry="<component_ancestry>"
-  data-layer-link_cta_id="<link_cta_id>"
+  data-layer-event_specific_id="<event_specific_id>"
+  data-layer-event_specific_type="<event_specific_type>"
   data-layer-link_url="<link_url>"
   data-layer-link_id="<link_id>"
   data-layer-link_classes="<link_classes>"
@@ -31,7 +32,8 @@ dataLayer.push({
   event: "click",
   event_data: {
     component_ancestry: "<component_ancestry>",
-    link_cta_id: "<link_cta_id>",
+    event_specific_id: "<event_specific_id>",
+    event_specific_type: "<event_specific_type>",
     link_url: "<link_url>",
     link_id: "<link_id>",
     link_classes: "<link_classes>",
@@ -48,8 +50,10 @@ dataLayer.push({
 
 |Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel
-|link_cta_id|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
+|affiliation|string|contextual|If the click represents a buyable product on an external site, the store or affiliation from which this product will be purchased. Use almost exclusively for Where to Buy and eRetailer exits.|amazon, walmart, target
+|component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel|
+|event_specific_id|string|optional|Optional field that uniquely identifies this link to make reporting easier. This is useful for when links on different pages have the same link text (e.g. "Learn More", "Get Started", "Buy Now"). We recommend using a delimited categorization heirarchy to help cluster similar link types together.|For instance, "careers\~apply" and "careers\~view opportunity".|
+|event_specific_type|string|optional|Optional field that generally identifies this link type to make reporting easier. This is useful for when a link represents a specific action that's not representated in its URL or the component ancestry. For instance, a where to buy widget's add to cart function versus its buy now function. We recommend using a delimited categorization heirarchy to help cluster similar link types together.|wtb\~buy now and wtb\~add to cart|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_href_type|string|recommended|

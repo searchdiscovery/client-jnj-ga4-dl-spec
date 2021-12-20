@@ -53,9 +53,11 @@ dataLayer.push({
 |Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel|
+|event_specific_id|string|optional|Optional field that uniquely identifies this link to make reporting easier. This is useful for when links on different pages have the same link text (e.g. "Learn More", "Get Started", "Buy Now"). We recommend using a delimited categorization heirarchy to help cluster similar link types together.|product\~fact sheet and product\~ingredients|
+|event_specific_type|string|optional|Optional field that generally identifies this link type to make reporting easier. This is useful for when a link represents a specific action that's not representated in its URL or the component ancestry. For instance, a product fact sheet versus a product ingredients sheet. We recommend using a delimited categorization heirarchy to help cluster similar link types together.|product\~fact sheet and product\~ingredients|
 |file_extension|string|recommended|The file extension of the file being downloaded.|pdf|
 |file_name|string|recommended|The filename of the file being downloaded.|drug_facts.pdf|
-|link_cta_id|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
+|link_cta_id|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers\~apply" and "careers\~view opportunity".|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_href_type|string|recommended|

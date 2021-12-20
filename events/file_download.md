@@ -38,7 +38,6 @@ dataLayer.push({
     event_specific_type: "<event_specific_type>",
     file_extension: "<file_extension>",
     file_name: "<file_name>",
-    link_cta_id: "<link_cta_id>",
     link_url: "<link_url>",
     link_id: "<link_id>",
     link_classes: "<link_classes>",

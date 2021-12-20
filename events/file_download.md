@@ -33,6 +33,8 @@ dataLayer.push({
   event: "file_download",
   event_data: {
     component_ancestry: "<component_ancestry>",
+    event_specific_id: "<event_specific_id>",
+    event_specific_type: "<event_specific_type>",
     file_extension: "<file_extension>",
     file_name: "<file_name>",
     link_cta_id: "<link_cta_id>",

@@ -8,6 +8,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 
 ```html
 <a href="<link_url>"
+  data-layer-affiliation="affiliation"
   data-layer-event="click"
   data-layer-component_ancestry="<component_ancestry>"
   data-layer-event_specific_id="<event_specific_id>"
@@ -31,6 +32,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "click",
   event_data: {
+    affiliation: "<affiliation>",
     component_ancestry: "<component_ancestry>",
     event_specific_id: "<event_specific_id>",
     event_specific_type: "<event_specific_type>",

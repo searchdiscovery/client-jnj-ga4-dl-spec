@@ -28,8 +28,8 @@ dataLayer.push({
   event: "select_content",
   event_data: {
     content_type: "<content_type>",
-    event_specific_id: '<event_specific_id>',
-    event_specific_name: '<event_specific_name>',
+    event_specific_id: "<event_specific_id>",
+    event_specific_name: "<event_specific_name>",
     facets: "<facets>",
     list_type: "<list_type>",
     search_term: "<search_term>",

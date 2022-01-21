@@ -10,7 +10,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "search",
   event_data: {
-    corrected_term: "<corrected_term>"
+    corrected_term: "<corrected_term>",
     search_term: "<search_term>",
     search_type: "<search_type>",
   }

@@ -12,7 +12,7 @@ There is no longer a concept of virtual page view, so this event should be fired
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ page_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: '<page_view>',
+  event: 'page_view',
   page_data: {
     brand: '<brand>',
     country: '<country>',

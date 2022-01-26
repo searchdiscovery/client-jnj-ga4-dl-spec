@@ -24,6 +24,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "creative_slot": "<creative_slot>",
   "item_list_id": "<item_list_id>",
   "item_list_name": "<item_list_name>",
+  "index": "<index>",
   "location_id": "<location_id>",
   "promotion_id": "<promotion_id>",
   "promotion_name": "<promotion_name>",
@@ -40,6 +41,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |creative_slot|string|recommended if item is being sent with a promotion event|The name of a creative slot.|featured_app_1|
 |currency|string|recommended|The currency, in 3-letter ISO 4217 format.|USD|
 |discount|number|conditional|Monetary value of discount associated with a purchase.|2.22|
+|index|number|conditional|The index/position of the item in a list.|2|
 |item_brand|string|recommended|Item brand|Gucci|
 |item_category|string|recommended|Item Category (context-specific). `item_category2` through `item_category5`can also be used if the item has many categories.|pants|
 |item_id|string|required|Item ID (context-specific).|SKU_12345|

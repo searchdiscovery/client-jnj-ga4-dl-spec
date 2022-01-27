@@ -16,8 +16,14 @@ dataLayer.push({
   page_data: {
     brand: '<brand>',
     country: '<country>',
+    event_specific_category: '<event_specific_category>',
+    event_specific_category2: '<event_specific_category2>',
+    event_specific_category3: '<event_specific_category3>',
+    event_specific_category4: '<event_specific_category4>',
+    event_specific_category5: '<event_specific_category5>',
+    event_specific_id: '<event_specific_id>',
+    event_specific_type: '<event_specific_type>',
     language: '<language>',
-    page_category: '<page_category>',
     page_location: '<page_location>',
     page_referrer: '<page_referrer>', 
     page_title: '<page_title>',
@@ -38,14 +44,15 @@ dataLayer.push({
 |brand|string|required|The brand the site is associated with.|neutrogena|
 |country|string|required|The country the site is associated with.|us|
 |language|string|required|The language of the current page, usually pulled from the `<html>` tag `lang` attribute.|en|
-|page_category|string|required|Used for grouping pages (or screens) into high level categories.|article,blog,homepage,product|
+|event_specific_category|string|recommended|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|sun protection|
+|event_specific_category[2-5]|string|optional|Used for grouping pages (or screens) into subcategories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|waterproof|
+|event_specific_id|string|recommended|A durable identifier for a page that will enabled measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|12345|
+|event_specific_name|string|optional|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|homepage,search results,product:neutrogena hydro boost gel|
+|event_specific_type|string|recommended|Used for grouping pages (or screens) into high level types.|article,blog,homepage,product|
 |page_location|string|required|The url of the page currently being viewed.|https://www.neutrogena.com|
 |page_referrer|string|required|The previous page URL, generally available in `document.referrer`|https://www.neutrogena.com|
-|page_title|string|required|The title of the page currently being viewed, generally available in `<title>`; alternatively, the low-level, client-defined name of the page currently being viewed.|homepage,search results,product:neutrogena hydro boost gel|
+|page_title|string|required|The title of the page currently being viewed, generally available in the HTML `<title>` tag; alternatively, the low-level, client-defined name of the page currently being viewed.|homepage,search results,product:neutrogena hydro boost gel|
 |region|string|required|The region the site is associated with.|EMEA|
 |site_section|string|recommended|The section of the site that the current page resides in. `site_section2` through `site_section5`can also be used if the site has many sections.|products|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
 |user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|
-
-## Notes
-- This is the first version with baseline parameters. There will be many additional parameters coming over time as more and more sites are added with differing requirements.

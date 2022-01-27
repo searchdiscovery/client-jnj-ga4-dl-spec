@@ -8,7 +8,7 @@ Fire whenever a user interacts with the specific carousel slide control
 <a href="<link_url>"
   data-layer-event="specific_carousel_slide"
   data-layer-event_specific_id="<event_specific_id>"
-  data-layer-event_specific_id="<event_specific_id>"
+  data-layer-event_specific_name="<event_specific_name>"
   data-layer-slot="<slot>"
   data-layer-target_slot="<target_slot>"
 >
@@ -23,7 +23,7 @@ dataLayer.push({
   event: 'specific_carousel_slide',
   event_data: {
     event_specific_id: "<event_specific_id>",
-    event_specific_name: "<event_specific_id>",
+    event_specific_name: "<event_specific_name>",
     slot: "<slot>",
     target_slot: "<target_slot>"
   }

@@ -29,6 +29,10 @@ dataLayer.push({
     page_title: '<page_title>',
     region: '<region>',
     site_section: '<site_section>',
+    site_section2: '<site_section2>',
+    site_section3: '<site_section3>',
+    site_section4: '<site_section4>',
+    site_section5: '<site_section5>',
   },
   user_data: {
     user_id: '<user_id>',
@@ -53,6 +57,7 @@ dataLayer.push({
 |page_referrer|string|required|The previous page URL, generally available in `document.referrer`|https://www.neutrogena.com|
 |page_title|string|required|The title of the page currently being viewed, generally available in the HTML `<title>` tag; alternatively, the low-level, client-defined name of the page currently being viewed.|homepage,search results,product:neutrogena hydro boost gel|
 |region|string|required|The region the site is associated with.|EMEA|
-|site_section|string|recommended|The section of the site that the current page resides in. `site_section2` through `site_section5`can also be used if the site has many sections.|products|
+|site_section|string|recommended|The section of the site that the current page resides in.|products|
+|site_section[2-5]|string|recommended|The subsections of the site that the current page resides in.|sun protection products|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
 |user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|

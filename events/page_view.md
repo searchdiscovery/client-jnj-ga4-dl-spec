@@ -46,7 +46,7 @@ dataLayer.push({
 |language|string|required|The language of the current page, usually pulled from the `<html>` tag `lang` attribute.|en|
 |event_specific_category|string|recommended|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|sun protection|
 |event_specific_category[2-5]|string|optional|Used for grouping pages (or screens) into subcategories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|waterproof|
-|event_specific_id|string|recommended|A durable identifier for a page that will enabled measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|12345|
+|event_specific_id|string|recommended|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|12345|
 |event_specific_name|string|optional|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|homepage,search results,product:neutrogena hydro boost gel|
 |event_specific_type|string|recommended|Used for grouping pages (or screens) into high level types.|article,blog,homepage,product|
 |page_location|string|required|The url of the page currently being viewed.|https://www.neutrogena.com|

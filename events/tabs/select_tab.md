@@ -10,7 +10,7 @@ Fire whenever a user selects a tab item.
   data-layer-identifier="<identifier>"
   data-layer-name="<name>"
   data-layer-heading="<heading>"
-  data-layer-slot="<slot>"
+  data-layer-index="<index>"
 >
 ```
 ## Javascript Code
@@ -24,7 +24,7 @@ dataLayer.push({
     identifier: "<identifier>",
     name: "<name>",
     heading: "<heading>",
-    slot: "<slot>",
+    index: "<index>",
   }
 });
 ```
@@ -36,4 +36,4 @@ dataLayer.push({
 |identifier|string|required|The computer-readable machine name of the tab. Use UUID provided by the component|12345abcde12345|
 |name|string|recommended|The human-readable name of the tab. If user does not input one, populate with numerical index of which tab this is on the page (1-indexed). FAQs are the big one that currently need to be broken out in reporting, so getting a name for those should be the priority.|FAQs, 2|
 |heading|string|required|The text heading of the tab item that was opened/closed|"Are our products safe?"|
-|slot|integer|recommended|The ordinal slot number of the tab item. E.g. - the top item in the tab will be slot 1. (1-indexed)|1||1||1|
+|index|integer|recommended|The ordinal slot number of the tab item. E.g. - the top item in the tab will be slot 1. (1-indexed)|1||1||1|

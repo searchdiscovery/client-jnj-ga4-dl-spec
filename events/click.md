@@ -10,14 +10,14 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 <a href="<link_url>"
   data-layer-event="click"
   data-layer-component_ancestry="<component_ancestry>"
-  data-layer-event_specific_category="<event_specific_category>"
-  data-layer-event_specific_category2="<event_specific_category2>"
-  data-layer-event_specific_category3="<event_specific_category3>"
-  data-layer-event_specific_category4="<event_specific_category4>"
-  data-layer-event_specific_category5="<event_specific_category5>"
-  data-layer-event_specific_id="<event_specific_id>"
-  data-layer-event_specific_name="<event_specific_name>"
-  data-layer-event_specific_type="<event_specific_type>"
+  data-layer-category="<category>"
+  data-layer-category2="<category2>"
+  data-layer-category3="<category3>"
+  data-layer-category4="<category4>"
+  data-layer-category5="<category5>"
+  data-layer-identifier="<identifier>"
+  data-layer-name="<name>"
+  data-layer-type="<type>"
   data-layer-link_classes="<link_classes>"
   data-layer-link_id="<link_id>"
   data-layer-link_text="<link_text>"
@@ -37,14 +37,14 @@ dataLayer.push({
   event: "click",
   event_data: {
     component_ancestry: "<component_ancestry>",
-    event_specific_category: "<event_specific_category>",
-    event_specific_category2: "<event_specific_category2>",
-    event_specific_category3: "<event_specific_category3>",
-    event_specific_category4: "<event_specific_category4>",
-    event_specific_category5: "<event_specific_category5>",
-    event_specific_id: "<event_specific_id>",
-    event_specific_name: "<event_specific_name>",
-    event_specific_type: "<event_specific_type>",
+    category: "<category>",
+    category2: "<category2>",
+    category3: "<category3>",
+    category4: "<category4>",
+    category5: "<category5>",
+    identifier: "<identifier>",
+    name: "<name>",
+    type: "<type>",
     link_classes: "<link_classes>",
     link_id: "<link_id>",
     link_text: "<link_text>",
@@ -61,10 +61,10 @@ dataLayer.push({
 |Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel
-|event_specific_category|string|optional|Optional field that enables you to assign this link a specific category. Used primarily when you want to analyze the performance of a group of links that aren't connected by component_ancestry, region_ancestry, link_url, or link_text.|cta_links, wtb_links|
-|event_specific_category[2-5]|string|optional|Optional fields that enable you to assign this link additional subcategories beyond event_specific_category.|cta_links, wtb_links|
-|event_specific_id|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
-|event_specific_type|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|
+|category|string|optional|Optional field that enables you to assign this link a specific category. Used primarily when you want to analyze the performance of a group of links that aren't connected by component_ancestry, region_ancestry, link_url, or link_text.|cta_links, wtb_links|
+|category[2-5]|string|optional|Optional fields that enable you to assign this link additional subcategories beyond category.|cta_links, wtb_links|
+|identifier|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
+|type|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|

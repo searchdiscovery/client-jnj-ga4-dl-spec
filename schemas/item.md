@@ -9,6 +9,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   // Global
   "affiliation": "<affiliation>",
   "currency": "<currency>",
+  "gtin": "<gtin>",
   "item_brand": "<item_brand>",
   "item_category": "<item_category>",
   "item_id": "<item_id>",
@@ -17,7 +18,6 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "price": "<price>",
   "quantity": "<quantity>",
   "sku": "<sku>",
-  "gtin": "<gtin>",
 
   // Contextual
   "coupon": "<coupon>",
@@ -51,11 +51,11 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |item_list_id|string|contextual|The computer-readable machine name of the list the item showed up in (if sent with a view_item_list event). Use UUID provided by the component if no more specific ID is available.|12345abcde12345|
 |item_list_name|string|contextual|The human-readable name of the item list the item showed up in (if sent with a view_item_list event). If one is not available, populate with numerical index of which list this is on the page (1-indexed). For `filter_by_group` component, use that value.|filter_by_group, recommended_products, recently_viewed_products|
 |item_name|string|required|Item Name (context-specific).|jeggings|
+|item_subscription_type|string|recommended|Item Subscription Type. The subscription type when a user chooses to subscribe to a product being sent multiple times after their purchase.|3-months, 6-months, 9-months|
 |item_variant|string|recommended|The variant of the item.|Black|
 |location_id|string|recommended if the item is associated with a physical location|The location associated with the event. If possible, set to the Google Place ID that corresponds to the associated item. Can also be overridden to a custom location ID string.|L_12345|
-|sku|string|recommended|The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service|7702031413424|
 |price|number|recommended|The monetary price of the item, in units of the specified currency parameter.|9.99|
 |promotion_id|string|either `promotion_id` or `promotion_name` is required if item is being sent with a promotion event|The ID of a product promotion. |P_12345|
 |promotion_name|string|either `promotion_id` or `promotion_name` is required if item is being sent with a promotion event|The name of a product promotion. One of `promotion_id` or `promotion name` is required.|Summer Sale|
 |quantity|integer|recommended|Item quantity.|1|
-|item_subscription_type|string|recommended|Item Subscription Type. The subscription type when a user chooses to subscribe to a product being sent multiple times after their purchase.|3-months, 6-months, 9-months|
+|sku|string|recommended|The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service|7702031413424|

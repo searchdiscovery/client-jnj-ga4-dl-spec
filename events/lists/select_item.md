@@ -18,7 +18,7 @@ Do not fire this event for product links found in menus.
   data-layer-list_type="<list_type>"
   data-layer-search_term="<search_term>"
   data-layer-search_term="<search_type>"
-  data-layer-slot="<slot>"
+  data-layer-index="<index>"
 >
 ```
 
@@ -37,7 +37,7 @@ dataLayer.push({
     list_type: "<list_type>",
     search_term: "<search_term>",
     search_type: "<search_type>",
-    slot: "<slot>",
+    index: "<index>",
   }
 });
 ```
@@ -53,4 +53,4 @@ dataLayer.push({
 |list_type|string|contextual|The type of list the item was found in.|cards, search_results|
 |search_term|string|contextual|The final search term submitted after any correction has been performed. Only set if the `list_type` is `search_results`.|sunscreen|
 |search_type|string|contextual|The type of search performed. Only set if the `list_type` is `search_results`.|site, filter_by_group|
-|slot|integer|required|The numerical index of the item position (1-indexed). For instance, if this is the 5th search result, you would send 5 here. If this is the 3rd card in a single row, send 3. If this is the 2nd item in the 3rd row of a 3-up card layout, send 8 (3 + 3 + 2).|5|
+|index|integer|required|The numerical index of the item position (1-indexed). For instance, if this is the 5th search result, you would send 5 here. If this is the 3rd card in a single row, send 3. If this is the 2nd item in the 3rd row of a 3-up card layout, send 8 (3 + 3 + 2).|5|

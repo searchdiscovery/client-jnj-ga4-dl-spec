@@ -16,8 +16,6 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-category4="<category4>"
   data-layer-category5="<category5>"
   data-layer-identifier="<identifier>"
-  data-layer-name="<name>"
-  data-layer-type="<type>"
   data-layer-link_classes="<link_classes>"
   data-layer-link_id="<link_id>"
   data-layer-link_text="<link_text>"
@@ -25,6 +23,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-navigation_ancestry="<navigation_ancestry>"
   data-layer-outbound="<outbound>"
   data-layer-region_ancestry="<region_ancestry>"
+  data-layer-type="<type>"
 >
 ```
 
@@ -43,8 +42,6 @@ dataLayer.push({
     category4: "<category4>",
     category5: "<category5>",
     identifier: "<identifier>",
-    name: "<name>",
-    type: "<type>",
     link_classes: "<link_classes>",
     link_id: "<link_id>",
     link_text: "<link_text>",
@@ -52,6 +49,7 @@ dataLayer.push({
     navigation_ancestry: "<navigation_ancestry>",
     outbound: "<outbound>",
     region_ancestry: "<region_ancestry>",
+    type: "<type>",
   }
 });
 ```
@@ -64,7 +62,6 @@ dataLayer.push({
 |category|string|optional|Optional field that enables you to assign this link a specific category. Used primarily when you want to analyze the performance of a group of links that aren't connected by component_ancestry, region_ancestry, link_url, or link_text.|cta_links, wtb_links|
 |category[2-5]|string|optional|Optional fields that enable you to assign this link additional subcategories beyond category.|cta_links, wtb_links|
 |identifier|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
-|type|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
@@ -72,4 +69,5 @@ dataLayer.push({
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|
 |navigation_ancestry|string|recommended|A delimited string showing all navigation items in the ancestry of link clicked in a multi-tiered menu|about~our leadership~our CEO|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
-|region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation
+|region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation|
+|type|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|

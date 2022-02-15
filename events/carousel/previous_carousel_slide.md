@@ -7,8 +7,8 @@ Fire whenever a user interacts with the previous carousel slide control
 ```html
 <a href="<link_url>"
   data-layer-event="previous_carousel_slide"
-  data-layer-carousel_id="<carousel_id>"
-  data-layer-carousel_name="<carousel_name>"
+  data-layer-identifier="<identifier>"
+  data-layer-name="<name>"
   data-layer-index="<index>"
   data-layer-target_slot="<target_slot>"
 >
@@ -22,8 +22,8 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'previous_carousel_slide',
   event_data: {
-    identifier: "<carousel_id>",
-    name: "<carousel_name>",
+    identifier: "<identifier>",
+    name: "<name>",
     index: "<index>",
     target_index: "<target_slot>"
   }

@@ -1,3 +1,7 @@
+---
+title: 'Home'
+---
+
 # Johnson and Johnson GA4 Data Layer and Data Attribute Spec
 
 ## Overview

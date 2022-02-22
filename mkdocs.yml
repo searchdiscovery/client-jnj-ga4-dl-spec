@@ -1,0 +1,25 @@
+site_name: Johnson & Johnson GA4 Data Layer Spec
+repo_url: https://github.com/searchdiscovery/client-jnj-ga4-dl-spec
+repo_name: searchdiscovery/client-jnj-ga4-dl-spec
+edit_uri: edit/master/docs/
+theme:
+  name: material
+  palette:
+    primary: green
+  features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+markdown_extensions:
+  - admonition
+  - meta
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+plugins:
+  - git-revision-date

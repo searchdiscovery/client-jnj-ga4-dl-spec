@@ -8,7 +8,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 
 ```html
 <a href="<link_url>"
-  data-layer-event="click"
+  data-layer-event="file_download"
   data-layer-component_ancestry="<component_ancestry>"
   data-layer-file_extension="<file_extension>"
   data-layer-file_name="<file_name>"
@@ -17,10 +17,10 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-link_id="<link_id>"
   data-layer-link_classes="<link_classes>"
   data-layer-link_text="<link_text>"
-  data-layer-link_href_type="<link_href_type>"
   data-layer-navigation_ancestry="<navigation_ancestry>"
   data-layer-outbound="<outbound>"
   data-layer-region_ancestry="<region_ancestry>"
+  data-layer-type="<type>"
 >
 ```
 
@@ -40,10 +40,10 @@ dataLayer.push({
     link_id: "<link_id>",
     link_classes: "<link_classes>",
     link_text: "<link_text>",
-    link_href_type: "<link_href_type>",
     navigation_ancestry: "<navigation_ancestry>",
     outbound: "<outbound>",
     region_ancestry: "<region_ancestry>",
+    type: "<type>"
   }
 });
 ```
@@ -58,9 +58,9 @@ dataLayer.push({
 |link_cta_type|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
-|link_href_type|string|recommended|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|
 |navigation_ancestry|string|recommended|A delimited string showing all navigation items in the ancestry of link clicked in a multi-tiered menu|about~our leadership~our CEO|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
 |region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation
+|type|string|recommended|The link protocol.|http, https, mailto, tel|

@@ -25,3 +25,4 @@ dataLayer.push({
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |user_id|string|recommended|The user identifier|1234567890|
+|user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|

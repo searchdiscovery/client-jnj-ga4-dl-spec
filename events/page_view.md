@@ -33,10 +33,10 @@ dataLayer.push({
     site_section4: '<site_section4>',
     site_section5: '<site_section5>',
     type: '<type>',
+    user_login_state: '<user_login_state>',
   },
   user_data: {
     user_id: '<user_id>',
-    user_login_state: '<user_login_state>',
   }
 });
 ```

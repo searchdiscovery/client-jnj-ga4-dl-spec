@@ -1,6 +1,6 @@
-# Scroll
+# Scroll Milestone
 
-Fire when a user scrolls past a certain scroll depth. The built-in event fires automatically on 90% scroll depth, but customizing will allow for more control of triggering logic for user scroll engagement.
+Fire when a user scrolls past a certain scroll depth. The built-in `scroll` event can be set up to automatically on 90% scroll depth, but this event will allow for more milestones to be recorded.
 
 ## Javascript Code
 
@@ -8,7 +8,7 @@ Fire when a user scrolls past a certain scroll depth. The built-in event fires a
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: '<scroll>',
+  event: 'scroll_milestone',
   event_data: {
     percent_scrolled: '<percent_scrolled>'
   }

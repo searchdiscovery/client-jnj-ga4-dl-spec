@@ -12,7 +12,7 @@ dataLayer.push({
   event_data: {
     corrected_term: "<corrected_term>",
     search_term: "<search_term>",
-    type: "<type>",
+    search_type: "<search_type>",
   }
 });
 ```

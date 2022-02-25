@@ -14,7 +14,7 @@ dataLayer.push({
     facets: "<refinements>",
     number_of_items: "<number_of_items>",
     search_term: "<search_term>",
-    type: "<type>",
+    search_type: "<search_type>",
   }
 });
 ```

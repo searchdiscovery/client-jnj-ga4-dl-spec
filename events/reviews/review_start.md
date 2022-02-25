@@ -1,4 +1,4 @@
-# Start Review
+# Review Start
 
 Fire whenever a user modifies the first field on a review widget. 
 
@@ -10,7 +10,7 @@ An [item](/schemas/item) object should be included, but not as a separate proper
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'start_review',
+  event: 'review_start',
   event_data: {
     ...item
   }

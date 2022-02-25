@@ -1,4 +1,4 @@
-# View Chat
+# Chat View
 
 Fire whenever a user is presented with a chat prompt on a page.
 
@@ -8,7 +8,7 @@ Fire whenever a user is presented with a chat prompt on a page.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'view_chat',
+  event: 'chat_view',
   event_data: {
     identifier: '<identifier>',
     name: '<name>',

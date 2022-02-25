@@ -17,7 +17,7 @@ Do not fire this event for product links found in menus.
   data-layer-item_list_name="<item_list_name>"
   data-layer-list_type="<list_type>"
   data-layer-search_term="<search_term>"
-  data-layer-search_term="<search_type>"
+  data-layer-search_type="<search_type>"
   data-layer-index="<index>"
 >
 ```

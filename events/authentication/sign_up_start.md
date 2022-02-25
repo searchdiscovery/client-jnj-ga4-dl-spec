@@ -8,7 +8,10 @@ Fire whenever a user views the first step of the account creation form.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'start_sign_up'
+  event: 'sign_up_start'
+  event_data: {
+    method: '<method>'
+  }
 });
 ```
 
@@ -16,5 +19,4 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-||
-
+|method|string|recommended|The method by which a user created a new account.|local, social_login|

@@ -13,6 +13,7 @@ If using data attributes, the `data-layer-event` attribute should be dynamically
   data-layer-name="<name>"
   data-layer-heading="<heading>"
   data-layer-index="<index>"
+  data-layer-type="<type>"
 >
 ```
 ## Javascript Code
@@ -27,6 +28,7 @@ dataLayer.push({
     name: "<name>",
     heading: "<heading>",
     index: "<index>",
+    type: "<type>"
   }
 });
 ```
@@ -39,3 +41,4 @@ dataLayer.push({
 |name|string|recommended|The human-readable name of the accordion. If user does not input one, populate with numerical index of which accordion this is on the page (1-indexed). FAQs are the big one that currently need to be broken out in reporting, so getting a name for those should be the priority.|FAQs, 2|
 |heading|string|required|The text heading of the accordion item that was opened/closed|"Are our products safe?"|
 |index|integer|recommended|The ordinal slot number of the accordion item. E.g. - the top item in the accordion will be slot 1. (1-indexed)|1||1||1|
+|type|integer|recommended|The type of accordion.|FAQ, product|

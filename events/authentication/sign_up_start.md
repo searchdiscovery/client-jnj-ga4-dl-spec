@@ -1,4 +1,4 @@
-# Start Sign Up
+# Sign Up Start
 
 Fire whenever a user views the first step of the account creation form.
 

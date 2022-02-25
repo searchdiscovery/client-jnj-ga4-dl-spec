@@ -10,10 +10,10 @@ Do not fire this event for content links found in menus.
 <a href="<link_url>"
   data-layer-event="select_content"
   data-layer-facets="<facets>"
-  data-layer-identifier="identifier"
+  data-layer-identifier="<identifier>"
   data-layer-index="<index>"
   data-layer-list_type="<list_type>"
-  data-layer-name="name"
+  data-layer-name="<name>"
   data-layer-search_term="<search_term>"
   data-layer-search_term="<search_type>"
 >

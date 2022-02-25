@@ -24,7 +24,7 @@ dataLayer.push({
   event: 'iframe_post_message',
   event_data: {
     category: "<category>",
-    category2: "<2category>",
+    category2: "<category2>",
     data: "<data>",
     html_classes: "<classes>",
     html_element: "<element>",

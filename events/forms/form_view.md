@@ -1,4 +1,4 @@
-# View Form
+# Form View
 
 Fire whenever a user is presented with a form on a page.
 
@@ -12,7 +12,7 @@ This could be done with data attributes and detected via GTM at DOM Ready, but i
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'view_form',
+  event: 'form_view',
   event_data: {
     identifier: '<identifier>',
     name: '<name>',

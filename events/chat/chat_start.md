@@ -1,4 +1,4 @@
-# Start Chat
+# Chat Start
 
 Fire whenever a user initiates a chat session. 
 
@@ -8,7 +8,7 @@ Fire whenever a user initiates a chat session.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'start_chat',
+  event: 'chat_start',
   event_data: {
     identifier: '<identifier>',
     name: '<name>',

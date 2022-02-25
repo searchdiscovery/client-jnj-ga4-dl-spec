@@ -1,4 +1,4 @@
-# Start Survey
+# Survey Start
 
 Fire whenever a user starts filling out a survey. 
 
@@ -14,7 +14,7 @@ This could be done with data attributes and detected via GTM at DOM Ready, but i
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'start_survey',
+  event: 'survey_start',
   event_data: {
     identifier: '<identifier>',
     name: '<name>',

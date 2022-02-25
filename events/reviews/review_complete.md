@@ -12,8 +12,8 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'review_complete',
   event_data: {
-    rating: "<rating>"
-    ...item
+    rating: "<rating>",
+    item_id: "<item_id>"
   }
 });
 ```
@@ -22,5 +22,5 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|...item|[item](/schemas/item.md)|recommended|Properties representing the product being reviewed.|{item_id: "test"}
+|item_id|string|required|The ID of the product being reviewed.|12345|
 |rating|string|recommended|The numerical rating given to the product.|3|

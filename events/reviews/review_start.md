@@ -12,7 +12,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'review_start',
   event_data: {
-    ...item
+    item_id: "<item_id>"
   }
 });
 ```
@@ -21,4 +21,4 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|...item|[item](/schemas/item.md)|recommended|Properties representing the product being reviewed.|{item_id: "test"}
+|item_id|string|required|The ID of the product being reviewed.|12345|

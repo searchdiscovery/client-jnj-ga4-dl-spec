@@ -13,6 +13,7 @@ dataLayer.push({
     error_message: '<error_message>',
     identifier: '<identifier>',
     name: '<name>',
+    type: '<type>',
   }
 });
 ```

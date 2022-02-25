@@ -12,7 +12,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-component_ancestry="<component_ancestry>"
   data-layer-file_extension="<file_extension>"
   data-layer-file_name="<file_name>"
-  data-layer-link_cta_type="<link_cta_type>"
+  data-layer-identifier="<identifier>"
   data-layer-link_url="<link_url>"
   data-layer-link_id="<link_id>"
   data-layer-link_classes="<link_classes>"
@@ -35,7 +35,7 @@ dataLayer.push({
     component_ancestry: "<component_ancestry>",
     file_extension: "<file_extension>",
     file_name: "<file_name>",
-    link_cta_type: "<link_cta_type>",
+    identifier: "<identifier>",
     link_url: "<link_url>",
     link_id: "<link_id>",
     link_classes: "<link_classes>",
@@ -55,7 +55,7 @@ dataLayer.push({
 |component_ancestry|string|recommended|A delimited string showing all components in the ancestry of the link clicked|hero~product carousel|
 |file_extension|string|recommended|The file extension of the file being downloaded.|pdf|
 |file_name|string|recommended|The filename of the file being downloaded.|drug_facts.pdf|
-|link_cta_type|string|optional|Optional field that enables you to categorize this link beyond its containing components, regions, text, and href. Use a delimited categorization heirarchy.|For instance, "careers~apply" and "careers~view opportunity".|
+|identifier|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|

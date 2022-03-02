@@ -10,7 +10,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'scroll_milestone',
   event_data: {
-    percent_scrolled: '<percent_scrolled>'
+    milestone: '<milestone>'
   }
 });
 ```
@@ -19,4 +19,4 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|percent_scrolled|string|required|The depth to which user scrolled on the page.|10,25,50,75|
+|milestone|string|required|The depth to which user scrolled on the page.|25,50,75|

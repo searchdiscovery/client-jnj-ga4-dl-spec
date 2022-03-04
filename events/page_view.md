@@ -33,7 +33,7 @@ dataLayer.push({
     site_section3: '<site_section3>',
     site_section4: '<site_section4>',
     site_section5: '<site_section5>',
-    type: '<type>',
+    page_type: '<page_type>',
     user_login_state: '<user_login_state>',
   },
   user_data: {
@@ -59,6 +59,6 @@ dataLayer.push({
 |region|string|required|The region the site is associated with.|EMEA|
 |site_section|string|recommended|The section of the site that the current page resides in.|products|
 |site_section[2-5]|string|recommended|The subsections of the site that the current page resides in.|sun protection products|
-|type|string|recommended|Used for grouping pages (or screens) into high level types.|article,blog,homepage,product|
+|page_type|string|recommended|Used for grouping pages (or screens) into high level types.|article,blog,homepage,product|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
 |user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|

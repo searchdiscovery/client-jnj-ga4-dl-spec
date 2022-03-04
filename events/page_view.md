@@ -24,7 +24,8 @@ dataLayer.push({
     identifier: '<identifier>',
     language: '<language>',
     page_location: '<page_location>',
-    page_referrer: '<page_referrer>', 
+    page_name: '<page_name>',
+    page_referrer: '<page_referrer>',
     page_title: '<page_title>',
     region: '<region>',
     site_section: '<site_section>',
@@ -51,8 +52,8 @@ dataLayer.push({
 |category|string|recommended|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|sun protection|
 |category[2-5]|string|optional|Used for grouping pages (or screens) into subcategories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|waterproof|
 |identifier|string|recommended|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|12345|
-|name|string|optional|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|homepage,search results,product:neutrogena hydro boost gel|
 |page_location|string|required|The url of the page currently being viewed.|https://www.neutrogena.com|
+|page_name|string|optional|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|homepage,search results,product:neutrogena hydro boost gel|
 |page_referrer|string|required|The previous page URL, generally available in `document.referrer`|https://www.neutrogena.com|
 |page_title|string|required|The title of the page currently being viewed, generally available in the HTML `<title>` tag; alternatively, the low-level, client-defined name of the page currently being viewed.|homepage,search results,product:neutrogena hydro boost gel|
 |region|string|required|The region the site is associated with.|EMEA|

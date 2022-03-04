@@ -14,21 +14,21 @@ dataLayer.push({ page_data: null, user_data: null });  // Clear the previous att
 dataLayer.push({
   event: 'page_view',
   page_data: {
-    brand: '<brand>',
-    country: '<country>',
-    category: '<category>',
-    category2: '<category2>',
-    category3: '<category3>',
-    category4: '<category4>',
-    category5: '<category5>',
-    identifier: '<identifier>',
+    site_brand: '<brand>',
+    site_country: '<country>',
+    page_category: '<category>',
+    page_category2: '<page_category2>',
+    page_category3: '<page_category3>',
+    page_category4: '<page_category4>',
+    page_category5: '<page_category5>',
+    page_id: '<identifier>',
     language: '<language>',
     page_location: '<page_location>',
     page_name: '<page_name>',
     page_referrer: '<page_referrer>',
     page_title: '<page_title>',
     page_type: '<page_type>',
-    region: '<region>',
+    site_region: '<region>',
     site_section: '<site_section>',
     site_section2: '<site_section2>',
     site_section3: '<site_section3>',
@@ -46,18 +46,18 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|brand|string|required|The brand the site is associated with.|neutrogena|
-|country|string|required|The country the site is associated with.|us|
+|site_brand|string|required|The brand the site is associated with.|neutrogena|
+|site_country|string|required|The country the site is associated with.|us|
 |language|string|required|The language of the current page, usually pulled from the `<html>` tag `lang` attribute.|en|
-|category|string|recommended|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|sun protection|
-|category[2-5]|string|optional|Used for grouping pages (or screens) into subcategories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|waterproof|
-|identifier|string|recommended|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|12345|
+|page_category|string|recommended|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|sun protection|
+|page_category[2-5]|string|optional|Used for grouping pages (or screens) into subcategories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|waterproof|
+|page_id|string|recommended|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|12345|
 |page_location|string|required|The url of the page currently being viewed.|https://www.neutrogena.com|
 |page_name|string|optional|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|homepage,search results,product:neutrogena hydro boost gel|
 |page_referrer|string|required|The previous page URL, generally available in `document.referrer`|https://www.neutrogena.com|
 |page_title|string|required|The title of the page currently being viewed, generally available in the HTML `<title>` tag; alternatively, the low-level, client-defined name of the page currently being viewed.|homepage,search results,product:neutrogena hydro boost gel|
 |page_type|string|recommended|Used for grouping pages (or screens) into high level types.|article,blog,homepage,product|
-|region|string|required|The region the site is associated with.|EMEA|
+|site_region|string|required|The region the site is associated with.|EMEA|
 |site_section|string|recommended|The section of the site that the current page resides in.|products|
 |site_section[2-5]|string|recommended|The subsections of the site that the current page resides in.|sun protection products|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|

@@ -43,11 +43,10 @@ dataLayer.push({
 ```
 
 ## Variable Definitions
-
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|facets|delimited string|contextual|A double-delimited string of key/value pairs representing the refinements that were applied to this search. Only set if the list type is a search result or filter_by_group.|category:skin_health~skin_concern:acne~featured_as:best_seller|
-|items|array of [items](/schemas/item.md)|recommended|Populate with item objects that represent each product in the list.|[{item_id: "test"}]
+|facets|delimited string|contextual|A double-delimited string of key/value pairs representing the refinements that were applied to this search. Only set if the list type is a search result or filter_by_group.|category:skin_health\~skin_concern:acne\~featured_as:best_seller|
+|items|array of [items](/schemas/item.md)|required|Populate with only the item that was selected. This should always be a single item array.|`[{item_id: "070501110485", item_name: "Neutrogena Hydro Boost Gel-Cream with Hyaluronic Acid for Extra-Dry Skin"}]`
 |item_list_id|string|recommended|The computer-readable machine name of the list the item showed up in. Use UUID provided by the component if no more specific ID is available.|12345abcde12345|
 |item_list_name|string|recommended|The human-readable name of the list the item showed up in. If one is not available, populate with numerical index of which list this is on the page (1-indexed). For `filter_by_group` component, use that value.|filter_by_group, recommended_products, recently_viewed_products|
 |list_type|string|contextual|The type of list the item was found in.|cards, search_results|

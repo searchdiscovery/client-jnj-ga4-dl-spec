@@ -5,14 +5,16 @@ edit_uri: edit/master/docs/
 theme:
   name: material
   palette:
-    primary: green
+    primary: red
   features:
     - content.code.annotate
+    - navigation.instant
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
     - navigation.expand
     - navigation.top
+    - toc.follow
 markdown_extensions:
   - admonition
   - meta

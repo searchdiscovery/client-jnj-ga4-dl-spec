@@ -32,8 +32,8 @@ dataLayer.push({
 
 ## Variable Definitions
 
-|Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|Field|Type|Required?|Description|Example|
+| --- | --- | --- | --- | --- |
 |affiliation|string|recommended|A product affiliation that designates the product retailer.|Amazon.com,Walmart.com,CVS|
 |category|string|optional|Used to differentiate buy online versus buy locally.|find online,find locally|
 |link_text|string|required|The full text of the link if the link text represents an action (e.g. - Add to Cart, Buy Now, Get Directions, etc.). If the text of the link just represents information, send a description of the information (e.g. - for store hours of 8:00-16:00 send "store hours").|Add to Cart, Buy Now, Get Directions, store hours|

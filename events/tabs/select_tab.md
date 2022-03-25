@@ -1,6 +1,6 @@
 # Select Tab
 
-Fire whenever a user selects a tab item.
+Fire whenever a user selects a an item out of a tabset that asynchronously updates the page. Do not use this for navigation menus as those should be covered by [menu data attributes](/data-attributes/menus.md).
 
 ## HTML Data Attributes
 

@@ -26,6 +26,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "creative_slot": "<creative_slot>",
   "item_list_id": "<item_list_id>",
   "item_list_name": "<item_list_name>",
+  "item_out_of_stock": "<item_out_of_stock>",
   "index": "<index>",
   "location_id": "<location_id>",
   "promotion_id": "<promotion_id>",
@@ -51,6 +52,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |item_list_id|string|contextual|The computer-readable machine name of the list the item showed up in (if sent with a view_item_list event). Use UUID provided by the component if no more specific ID is available.|12345abcde12345|
 |item_list_name|string|contextual|The human-readable name of the item list the item showed up in (if sent with a view_item_list event). If one is not available, populate with numerical index of which list this is on the page (1-indexed). For `filter_by_group` component, use that value.|filter_by_group, recommended_products, recently_viewed_products|
 |item_name|string|required|Item Name (context-specific).|jeggings|
+|item_out_of_stock|string|contextual|Send as true if an item is out of stock. You should exclude this parameter if the item is in stock.|true|
 |item_subscription_type|string|recommended|Item Subscription Type. The subscription type when a user chooses to subscribe to a product being sent multiple times after their purchase.|3-months, 6-months, 9-months|
 |item_variant|string|recommended|The variant of the item.|Black|
 |location_id|string|recommended if the item is associated with a physical location|The location associated with the event. If possible, set to the Google Place ID that corresponds to the associated item. Can also be overridden to a custom location ID string.|L_12345|

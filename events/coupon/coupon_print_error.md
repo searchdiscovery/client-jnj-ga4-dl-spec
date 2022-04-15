@@ -7,7 +7,7 @@ Fire whenever a user encounters an error printing a coupon.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'coupon_print',
+  event: 'coupon_print_error',
   event_data: {
     coupons: '<coupons>',
     error_message: '<error_message>',

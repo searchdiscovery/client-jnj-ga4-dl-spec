@@ -19,4 +19,4 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|coupons|delimited string|required|A delimited string of coupons that the user selected and is now downloading or printing.|couponName1~couponName2~couponName3|
+|coupons|delimited string|required|A delimited string of coupons that the user selected and is now downloading or printing.|couponName1\~couponName2\~couponName3|

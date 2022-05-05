@@ -1,7 +1,7 @@
 site_name: Johnson & Johnson GA4 Data Layer Spec
 repo_url: https://github.com/searchdiscovery/client-jnj-ga4-dl-spec
 repo_name: searchdiscovery/client-jnj-ga4-dl-spec
-edit_uri: edit/master/docs/
+edit_uri: edit/master/
 theme:
   name: material
   palette:

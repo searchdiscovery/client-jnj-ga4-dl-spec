@@ -1,6 +1,6 @@
 # Get Directions WTB
 
-Fire whenever a user successfully opens a WTB widget.
+Fire whenever a user successfully gets directions to local store.
 
 ## Javascript Code
 

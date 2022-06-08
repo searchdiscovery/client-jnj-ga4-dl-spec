@@ -1,6 +1,6 @@
 # Change Item SKU
 
-Fire whenever a user successfully chagne the sku they are looking at within teh WTB tool.
+Fire whenever a user successfully chagne the sku they are looking at within the WTB tool.
 
 ## Javascript Code
 

@@ -5,6 +5,8 @@ This document is a quick reference to implement the Global GTM Container across 
 
 ## Javascript Code
 
+Add the following code to the site, as high inside the <head> tag as possible:
+
 ```js
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

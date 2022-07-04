@@ -18,7 +18,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-link_text="<link_text>"
   data-layer-link_url="<link_url>"
   data-layer-outbound="<outbound>"
-  data-layer-type="<type>"
+  data-layer-protocol="<type>"
 >
 ```
 
@@ -44,7 +44,7 @@ dataLayer.push({
     navigation_ancestry: "<navigation_ancestry>",
     outbound: "<outbound>",
     region_ancestry: "<region_ancestry>",
-    type: "<type>",
+    protocol: "<type>",
   }
 });
 ```
@@ -65,4 +65,4 @@ dataLayer.push({
 |navigation_ancestry|string|recommended|A delimited string showing all navigation items in the ancestry of link clicked in a multi-tiered menu|about~our leadership~our CEO|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
 |region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation|
-|type|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|
+|protocol|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|

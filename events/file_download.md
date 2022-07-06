@@ -20,7 +20,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-navigation_ancestry="<navigation_ancestry>"
   data-layer-outbound="<outbound>"
   data-layer-region_ancestry="<region_ancestry>"
-  data-layer-type="<type>"
+  data-layer-protocol="<type>"
 >
 ```
 
@@ -43,7 +43,7 @@ dataLayer.push({
     navigation_ancestry: "<navigation_ancestry>",
     outbound: "<outbound>",
     region_ancestry: "<region_ancestry>",
-    type: "<type>"
+    protocol: "<type>"
   }
 });
 ```
@@ -63,4 +63,4 @@ dataLayer.push({
 |navigation_ancestry|string|recommended|A delimited string showing all navigation items in the ancestry of link clicked in a multi-tiered menu|about~our leadership~our CEO|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
 |region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation
-|type|string|recommended|The link protocol.|http, https, mailto, tel|
+|protocol|string|recommended|The link protocol.|http, https, mailto, tel|

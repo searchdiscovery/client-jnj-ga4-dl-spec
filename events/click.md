@@ -17,6 +17,7 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-identifier="<identifier>"
   data-layer-link_text="<link_text>"
   data-layer-link_url="<link_url>"
+  data-layer-link_hostname="<link_hostname>"      
   data-layer-outbound="<outbound>"
   data-layer-protocol="<type>"
 >
@@ -41,6 +42,7 @@ dataLayer.push({
     link_id: "<link_id>",
     link_text: "<link_text>",
     link_url: "<link_url>",
+    link_hostname" "<link_hostname>",
     navigation_ancestry: "<navigation_ancestry>",
     outbound: "<outbound>",
     region_ancestry: "<region_ancestry>",
@@ -62,6 +64,7 @@ dataLayer.push({
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
 |link_text|string|required|The full text of the link.|click here|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|
+|link_hostname|string|required|The hostname of the link.|https://www.example.com|
 |navigation_ancestry|string|recommended|A delimited string showing all navigation items in the ancestry of link clicked in a multi-tiered menu|about~our leadership~our CEO|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
 |region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation|

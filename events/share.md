@@ -18,14 +18,18 @@ The parameters page_title and page_location are automatically sent along on each
 ## Javascript Code
 
 ```js
+// When:
+// User shares to social media.
+
+//Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'share',
   event_data: {
-    content_type: '<content_type>', // required | string | type of content | ex. blog, landing, content, product
+    content_type: '<content_type>', // Required | string | type of content | ex. blog, landing, content, product
     item_id: '<item_id>', // recommended | string | product primary ID | ex. SKU CW21001 or UPC 012345678905
-    method: '<method>' // required | string | social platform | ex. email, facebook, twitter
+    method: '<method>' // Required | string | social platform | ex. email, facebook, twitter
   }
 });
 ```

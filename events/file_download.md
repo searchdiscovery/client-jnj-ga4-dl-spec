@@ -36,7 +36,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "file_download",
   event_data: {
-    component_ancestry: "<component_ancestry>", // recommended | string | ex. hero~product carousel
+    component_ancestry: "<component_ancestry>", // recommended | string - delimited (~) | ex. hero~product carousel
     file_extension: "<file_extension>", // recommended | string | ex. pdf
     file_name: "<file_name>", // recommended | string | ex. example.pdf
     identifier: "<identifier>", // optional | string | ex. uniquely_created_id

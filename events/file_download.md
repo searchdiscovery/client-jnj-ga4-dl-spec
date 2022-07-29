@@ -61,7 +61,7 @@ dataLayer.push({
 |file_name|string|recommended|The filename of the file being downloaded.|drug_facts.pdf|
 |identifier|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
-|link_text|string|--unknown--|The file download link text
+|link_text|string|--unknown--|The file download link text|download sample pdf
 |link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|

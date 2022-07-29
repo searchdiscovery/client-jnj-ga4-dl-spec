@@ -47,7 +47,7 @@ dataLayer.push({
     navigation_ancestry: "<navigation_ancestry>", // recommended | string - delimited (~) | ex. about~our ceo
     outbound: "<outbound>", // optional | boolean | ex. false
     region_ancestry: "<region_ancestry>", // recommended | string - delimited (~) | ex. header~navigation
-    protocol: "<type>"
+    protocol: "<type>" // recommended | string | ex. http, https, mailto, tel
   }
 });
 ```

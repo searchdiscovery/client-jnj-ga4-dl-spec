@@ -9,35 +9,40 @@ There is no longer a concept of virtual page view, so this event should be fired
 ## Javascript Code
 
 ```js
+// When:
+// User loads a new page (synchronously or asynchronously)
+// Should be the first push into dataLayer, placed in the <head> and first <script> on page.
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ page_data: null, user_data: null });  // Clear the previous attributes.
 dataLayer.push({
   event: 'page_view',
   page_data: {
-    language: '<language>',
-    page_category: '<category>',
-    page_category2: '<page_category2>',
-    page_category3: '<page_category3>',
-    page_category4: '<page_category4>',
-    page_category5: '<page_category5>',
-    page_id: '<page_id>',
-    page_location: '<page_location>',
-    page_name: '<page_name>',
-    page_referrer: '<page_referrer>',
-    page_title: '<page_title>',
-    page_type: '<page_type>',
-    site_brand: '<site_brand>',
-    site_country: '<site_country>',
-    site_region: '<site_region>',
-    site_section: '<site_section>',
-    site_section2: '<site_section2>',
-    site_section3: '<site_section3>',
-    site_section4: '<site_section4>',
-    site_section5: '<site_section5>',
-    user_login_state: '<user_login_state>',
+    language: '<language>', // Required | string | ex. en
+    page_category: '<category>', // recommended | string | ex. sun protection
+    page_category2: '<page_category2>', // optional | string | ex. waterproof
+    page_category3: '<page_category3>', // optional | string | ex. waterproof
+    page_category4: '<page_category4>', // optional | string | ex. waterproof
+    page_category5: '<page_category5>', // optional | string | ex. waterproof
+    page_id: '<page_id>', // recommended | string | ex. 12345
+    page_location: '<page_location>', // Required | string | ex. https://www.sample.com
+    page_name: '<page_name>', // optional | string | ex. homepage, search results, product:sample
+    page_referrer: '<page_referrer>', // Required | string | ex. https://www.sample.com
+    page_title: '<page_title>', // Required | string | ex. homepage, search results, product:sample
+    page_type: '<page_type>', // recommended | string | ex. article, blog, homepage, product
+    site_brand: '<site_brand>', // Required | string | ex. neutrogena
+    site_country: '<site_country>', // Required | string | ex us, au, is, jp
+    site_region: '<site_region>', // Required | string | ex. EMEA
+    site_section: '<site_section>', // recommended | string | ex. products
+    site_section2: '<site_section2>', // recommended | string | ex. sun protection products
+    site_section3: '<site_section3>', // recommended | string | ex. sun protection products
+    site_section4: '<site_section4>', // recommended | string | ex. sun protection products
+    site_section5: '<site_section5>', // recommended | string | ex. sun protection products
+    user_login_state: '<user_login_state>', // optional | string | ex. authenticate, anonymous 
   },
   user_data: {
-    user_id: '<user_id>',
+    user_id: '<user_id>', // optional | string | ex. 12345 
   }
 });
 ```

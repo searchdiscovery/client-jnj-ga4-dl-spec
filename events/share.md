@@ -24,7 +24,7 @@ dataLayer.push({
   event: 'share',
   event_data: {
     content_type: '<content_type>', // required | string | type of content | ex. blog, landing, content, product
-    item_id: '<item_id>', // recommended | string | product primary ID | ex. SKU or UPC
+    item_id: '<item_id>', // recommended | string | product primary ID | ex. SKU CW21001 or UPC 012345678905
     method: '<method>' // required | string | social platform | ex. email, facebook, twitter
   }
 });

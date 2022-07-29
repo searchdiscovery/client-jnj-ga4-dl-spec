@@ -11,7 +11,7 @@ There is no longer a concept of virtual page view, so this event should be fired
 ```js
 // When:
 // User loads a new page (synchronously or asynchronously)
-// Should be the first push into dataLayer, placed in the <head> and first <script> on page.
+// Should be the first push into dataLayer, placed in the <head> and ideally first <script> on page.
 
 // Code
 window.dataLayer = window.dataLayer || [];

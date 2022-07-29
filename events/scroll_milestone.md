@@ -5,12 +5,16 @@ Fire when a user scrolls past a certain scroll depth. The built-in `scroll` even
 ## Javascript Code
 
 ```js
+// When:
+// User scrolls past a certain scroll depth
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'scroll_milestone',
   event_data: {
-    milestone: '<milestone>'
+    milestone: '<milestone>' // Required | string | ex. 25, 50, 75
   }
 });
 ```

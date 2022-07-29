@@ -6,7 +6,7 @@ Add the following attributes to the outermost HTML element of every component.
 
 ```html
 <div
-  data-layer-component="<component>" //test
+  data-layer-component="<component>"
 >
 ```
 

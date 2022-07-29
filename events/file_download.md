@@ -27,22 +27,26 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 ## Javascript Code
 
 ```js
+// When:
+// User clicks a non anchor tag used for a file download link, i.e. <button>
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "file_download",
   event_data: {
-    component_ancestry: "<component_ancestry>",
-    file_extension: "<file_extension>",
-    file_name: "<file_name>",
-    identifier: "<identifier>",
-    link_url: "<link_url>",
-    link_id: "<link_id>",
-    link_classes: "<link_classes>",
-    link_text: "<link_text>",
-    navigation_ancestry: "<navigation_ancestry>",
-    outbound: "<outbound>",
-    region_ancestry: "<region_ancestry>",
+    component_ancestry: "<component_ancestry>", // recommended | string | ex. hero~product carousel
+    file_extension: "<file_extension>", // recommended | string | ex. pdf
+    file_name: "<file_name>", // recommended | string | ex. example.pdf
+    identifier: "<identifier>", // optional | string | ex. uniquely_created_id
+    link_url: "<link_url>", // Required | string | ex. https://www.example.com/form
+    link_id: "<link_id>", // Required | string | ex. submit-button
+    link_classes: "<link_classes>", // Required | string | ex. button-red
+    link_text: "<link_text>", // **Unknown** | string | ex. download sample pdf
+    navigation_ancestry: "<navigation_ancestry>", // recommended | string - delimited (~) | ex. about~our ceo
+    outbound: "<outbound>", // optional | boolean | ex. false
+    region_ancestry: "<region_ancestry>", // recommended | string - delimited (~) | ex. header~navigation
     protocol: "<type>"
   }
 });
@@ -57,6 +61,7 @@ dataLayer.push({
 |file_name|string|recommended|The filename of the file being downloaded.|drug_facts.pdf|
 |identifier|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
+|link_text|string|**Unknown**|The file download link text
 |link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|

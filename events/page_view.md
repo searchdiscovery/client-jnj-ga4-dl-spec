@@ -26,9 +26,9 @@ dataLayer.push({
     page_category4: '<page_category4>', // optional | string | ex. waterproof
     page_category5: '<page_category5>', // optional | string | ex. waterproof
     page_id: '<page_id>', // recommended | string | ex. 12345
-    page_location: '<page_location>', // Required | string | ex. https://www.sample.com
+    page_location: '<page_location>', // Required | string | ex. https://www.example.com
     page_name: '<page_name>', // optional | string | ex. homepage, search results, product:sample
-    page_referrer: '<page_referrer>', // Required | string | ex. https://www.sample.com
+    page_referrer: '<page_referrer>', // Required | string | ex. https://www.example.com
     page_title: '<page_title>', // Required | string | ex. homepage, search results, product:sample
     page_type: '<page_type>', // recommended | string | ex. article, blog, homepage, product
     site_brand: '<site_brand>', // Required | string | ex. neutrogena

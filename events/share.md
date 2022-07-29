@@ -23,9 +23,9 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'share',
   event_data: {
-    content_type: '<content_type>',
-    item_id: '<item_id>',
-    method: '<method>'
+    content_type: '<content_type>', // required | string | type of content | ex. blog, landing, content, product
+    item_id: '<item_id>', // recommended | string | product primary ID | ex. SKU or UPC
+    method: '<method>' // required | string | social platform | ex. email, facebook, twitter
   }
 });
 ```

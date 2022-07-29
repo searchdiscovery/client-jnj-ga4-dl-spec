@@ -21,7 +21,7 @@ The parameters page_title and page_location are automatically sent along on each
 // When:
 // User shares to social media.
 
-//Code:
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({

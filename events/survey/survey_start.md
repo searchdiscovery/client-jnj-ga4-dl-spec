@@ -13,7 +13,7 @@ This could be done with data attributes and detected via GTM at DOM Ready, but i
 ```js
 // When:
 // User starts to fill our a survey. Event fires after user input into the first form field 
-// and should only fire once. onchange(), onfocus(),  and GTM may be helpful.
+// and should only fire once. onchange(), onfocus(), and GTM may be helpful.
 
 // Code:
 window.dataLayer = window.dataLayer || [];

@@ -19,7 +19,7 @@ dataLayer.push({
     video_percent: '<video_percent>', //Required | string | ex. 15
     video_provider: '<video_provider>', //Required | string | ex. youtube, vimeo
     video_title: '<video_title>', //Required | string | ex. My Video
-    video_url: '<video_url>', //Required | string | https://yout.be/12345ABC
+    video_url: '<video_url>', //Required | string | https://youtu.be/12345ABC
     visible: '<visible>', //Required | boolean | ex. true
   }
 });

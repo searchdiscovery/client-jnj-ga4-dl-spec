@@ -16,15 +16,19 @@ Fire whenever a user selects a an item out of a tabset that asynchronously updat
 ## Javascript Code
 
 ```js
+// When:
+// User selects an item in a tabset that asynchronously updates page. Not for navigation menu use.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "select_tab",
   event_data: {
-    identifier: "<identifier>",
-    name: "<name>",
-    heading: "<heading>",
-    index: "<index>",
+    identifier: "<identifier>", //Required | string | ex. 12345abcde12345
+    name: "<name>", //recommended | string | ex. FAQs, 2
+    heading: "<heading>", //Required | string | ex. Are our products safe?
+    index: "<index>", //recommended | integer | ex 1, 5
   }
 });
 ```

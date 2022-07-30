@@ -7,14 +7,18 @@ This event is fired when survey input is successfully received and process. This
 ## Javascript Code
 
 ```js
+// When:
+// User successfully completes survey and survey input is sucessfully received and processed. Contrasts survey_error in which a submission is not recieved and processed. 
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'survey_complete',
   event_data: {
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>'
+    identifier: '<identifier>', //recommended | string | ex. cancel_subscription_flow, free_trial
+    name: '<name>', //Required | string | ex. cancel_subscription_flow, free_trial
+    type: '<type>' //Required | string | ex. survey, lead_generation
   }
 });
 ```

@@ -7,15 +7,19 @@ This is in contrast to [`complete_survey`](survey/complete_survey.md) which occu
 ## Javascript Code
 
 ```js
+// When:
+// User unsuccessfully completes a survey and survey input is not sucessfully received and processed. Contrasts survey_complete in which a submission is recieved and processed sucessfully. 
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'survey_error',
   event_data: {
-    error_message: '<error_message>',
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>'
+    error_message: '<error_message>', //Required | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address
+    identifier: '<identifier>', //recommended | string | ex. cancel_subscription_flow, free_trial
+    name: '<name>', //Required | string | ex. cancel_subscription_flow, free_trial
+    type: '<type>', //Required | string | ex. survey, lead_generation
   }
 });
 ```

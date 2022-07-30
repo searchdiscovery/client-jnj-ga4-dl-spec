@@ -5,18 +5,22 @@ Fire whenever a user starts a video. This will usually be picked up automaticall
 ## Javascript Code
 
 ```js
+// When:
+// Video starts, useful for mobile
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'video_start',
   event_data: {
-    video_current_time: '<video_current_time>',
-    video_duration: '<video_duration>',
-    video_percent: '<video_percent>',
-    video_provider: '<video_provider>',
-    video_title: '<video_title>',
-    video_url: '<video_url>',
-    visible: '<visible>',
+    video_current_time: '<video_current_time>', //Required | string | ex. 15
+    video_duration: '<video_duration>', //Required | string | ex. 600
+    video_percent: '<video_percent>', //Required | string | ex. 15
+    video_provider: '<video_provider>', //Required | string | ex. youtube, vimeo
+    video_title: '<video_title>', //Required | string | ex. My Video
+    video_url: '<video_url>', //Required | string | https://yout.be/12345ABC
+    visible: '<visible>', //Required | boolean | ex. true
   }
 });
 ```

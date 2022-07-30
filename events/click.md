@@ -26,27 +26,31 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 ## Javascript Code
 
 ```js
+// When:
+// User clicks a non anchor tag used for an action, i.e. <button>
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "click",
   event_data: {
-    component_ancestry: "<component_ancestry>",
-    category: "<category>",
-    category2: "<category2>",
-    category3: "<category3>",
-    category4: "<category4>",
-    category5: "<category5>",
-    identifier: "<identifier>",
-    link_classes: "<link_classes>",
-    link_id: "<link_id>",
-    link_text: "<link_text>",
-    link_url: "<link_url>",
-    link_hostname" "<link_hostname>",
-    navigation_ancestry: "<navigation_ancestry>",
-    outbound: "<outbound>",
-    region_ancestry: "<region_ancestry>",
-    protocol: "<type>",
+    component_ancestry: "<component_ancestry>", //recommended | string | string - delimeted (~) | ex. hero~product carousel
+    category: "<category>", //optional | string | ex. cta_links, wtb_links
+    category2: "<category2>", //optional | string | ex. cta_links, wtb_links
+    category3: "<category3>", //optional | string | ex. cta_links, wtb_links
+    category4: "<category4>", //optional | string | ex. cta_links, wtb_links
+    category5: "<category5>", //optional | string | ex. cta_links, wtb_links
+    identifier: "<identifier>", //optional | string | ex. uniquely_created_id
+    link_classes: "<link_classes>", //Required | string | ex. button-red 
+    link_id: "<link_id>", //Required | string | ex. submit-button
+    link_text: "<link_text>", //Required | string | ex. click here
+    link_url: "<link_url>", //Required | string | ex. https://www.example.com/form
+    link_hostname: "<link_hostname>", //Required | string | ex. https://www.example.com
+    navigation_ancestry: "<navigation_ancestry>", //recommended | string - delimeted (~) | ex. about~Our CEO
+    outbound: "<outbound>", //optional | boolean | ex. false
+    region_ancestry: "<region_ancestry>", //recommended | string - delimeted (~) | ex. header~navigation
+    protocol: "<type>", // Required | string | ex. http, https, mailto, tel
   }
 });
 ```

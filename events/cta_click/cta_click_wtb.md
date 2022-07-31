@@ -19,8 +19,8 @@ This event will be automatically detected and fired if the data attributes below
 ```js
 // When:
 // User clicks on a CTA link
-// NOTE: Event is automatically fired if the attributes are added to an anchor element
-// or other HTML element representing a link
+// NOTE: Event is automatically fired if the attributes are added to an HTML anchor element
+// or HTML element representing a link
 
 // Code:
 window.dataLayer = window.dataLayer || [];

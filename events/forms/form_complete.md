@@ -7,20 +7,24 @@ This event is fired when form input is successfully received and process. This i
 ## Javascript Code
 
 ```js
+// When:
+// User successfully completes a form and data is received and processed
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null, user_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'form_complete',
   event_data: {
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>'
+    identifier: '<identifier>', //recommended | string | ex. ecp_locator, free_trial	
+    name: '<name>', //Required | string | ex. ecp_locator, free_trial	
+    type: '<type>' //Required | string | ex. contact, lead_generation	
   },
   user_data: {
-    user_id: '<user_id>',
-    user_login_state: '<user_login_state>',
-    event_form_custkey: '<SFMC_CustomerKey>',
-    event_form_hashemail: '<HashedEmail>'
+    user_id: '<user_id>', //optional | string | ex. 12345
+    user_login_state: '<user_login_state>', //optional | string | ex. authenticated, anonymous	
+    event_form_custkey: '<SFMC_CustomerKey>', //Required | string | ex. 12345...
+    event_form_hashemail: '<HashedEmail>' //Required | string | ex. b642b4217b34b1e8d3bd915fc65c4452 (MD5)
   }
 });
 ```

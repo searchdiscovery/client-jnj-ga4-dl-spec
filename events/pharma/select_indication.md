@@ -5,12 +5,16 @@ Fire whenever a user selects a drug indication or specialty.
 ## Javascript Code
 
 ```js
+// When:
+// User user selects a drug indicatino or specialy
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'select_indication',
   event_data: {
-    indication: '<indication>',
+    indication: '<indication>', //recommended | string | ex. dermatology, rheumatology	
   }
 });
 ```

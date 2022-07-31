@@ -20,17 +20,21 @@ Promotions do not have a solid definition at the moment and are likely to be def
 ## Javascript Code
 
 ```js
+// When:
+// User user clicks on a promotion link found in a list (cards, carousels, search) that forwards to a promotion page
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "select_promotion",
   ecommerce: {
-    facets: "<facets>",
-    list_type: "<list_type>",
-    search_term: "<search_term>",
-    search_type: "<search_type>",
-    index: "<index>",
-    items: "<items>"
+    facets: "<facets>", //optional | string - double delimited (:)(,) | ex. category:skin_health, featured_as:best_seller
+    list_type: "<list_type>", //optional | string | ex. cards, carousel, popular_products, search_results	
+    search_term: "<search_term>", //optional | string | ex. sunscreen
+    search_type: "<search_type>", //optional | string | site, filter_by_group
+    index: "<index>", //Required | integer | ex. 5
+    items: "<items>" //Required | array | ex. [{item_id: "test"}]
   }
 });
 ```

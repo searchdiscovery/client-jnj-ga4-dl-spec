@@ -47,7 +47,7 @@ dataLayer.push({
     link_text: "<link_text>", // REQUIRED | string | ex. click here
     link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/form
     link_hostname: "<link_hostname>", // REQUIRED | string | ex. https://www.example.com
-    navigation_ancestry: "<navigation_ancestry>", // recommended | string - delimeted (~) | ex. about~Our CEO
+    navigation_ancestry: "<navigation_ancestry>", // recommended | string - delimeted (~) | ex. about~our ceo
     outbound: "<outbound>", // optional | boolean | ex. false
     region_ancestry: "<region_ancestry>", // recommended | string - delimeted (~) | ex. header~navigation
     protocol: "<type>", // REQUIRED | string | ex. http, https, mailto, tel

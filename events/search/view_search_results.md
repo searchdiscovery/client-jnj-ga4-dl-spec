@@ -15,7 +15,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "view_search_results",
   event_data: {
-    facets: "<refinements>", // recommended | string | ex. need:skin health~skin_concern:acne~featured_as:best_seller	
+    facets: "<refinements>", // recommended | string - double delimited (:)(~) | ex. category:skin_health~featured_as:best_seller	
     number_of_items: "<number_of_items>", // recommended | integer | ex. 324
     search_term: "<search_term>", // REQUIRED | string | ex. sunscreen
     search_type: "<search_type>", // REQUIRED | string | ex. ecp_locator, filter_by_group,product, site	

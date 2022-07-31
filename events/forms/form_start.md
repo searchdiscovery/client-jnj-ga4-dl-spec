@@ -21,9 +21,9 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'form_start',
   event_data: {
-    identifier: '<identifier>', //recommended | string | ex. ecp_locator, free_trial	
-    name: '<name>', //Required | string | ex. ecp_locator, free_trial	
-    type: '<type>' //Required | string | ex. contact, lead_generation	
+    identifier: '<identifier>', // recommended | string | ex. ecp_locator, free_trial	
+    name: '<name>', // REQUIRED | string | ex. ecp_locator, free_trial	
+    type: '<type>' // REQUIRED | string | ex. contact, lead_generation	
   }
 });
 ```

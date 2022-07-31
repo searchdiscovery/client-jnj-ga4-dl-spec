@@ -14,14 +14,14 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "purchase",
   ecommerce: {
-    affiliation: "<affiliation>", //recommended | string | ex. walgreens | pattern: ^[A-Za-z0-9_]+$	
-    coupon: "<coupon>", //recommended | string | ex. SUMMER_FUN | pattern: ^[A-Za-z0-9_]+$ 
-    currency: "<currency>", //Required | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
-    items: "<items>", //Required | array | ex. [{item_id: "test"}]
-    shipping: "<shipping>", //recommended | number | ex. 3.33 | pattern: ^\d\.\d\d$	| min. 0.00
-    tax: "<tax>", //recommended | number | ex. 1.11 | pattern: ^\d\.\d\d$	| min. 0.00
-    transaction_id: "<transaction_id>", //Required | string | T12345
-    value: "<value>" //Required | number | ex. 7.77 | pattern: ^\d\.\d\d$	| min. 0.00
+    affiliation: "<affiliation>", // recommended | string | ex. walgreens | pattern: ^[A-Za-z0-9_]+$	
+    coupon: "<coupon>", // recommended | string | ex. SUMMER_FUN | pattern: ^[A-Za-z0-9_]+$ 
+    currency: "<currency>", // REQUIRED | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
+    items: "<items>", // REQUIRED | array | ex. [{item_id: "test"}]
+    shipping: "<shipping>", // recommended | number | ex. 3.33 | pattern: ^\d\.\d\d$	| min. 0.00
+    tax: "<tax>", // recommended | number | ex. 1.11 | pattern: ^\d\.\d\d$	| min. 0.00
+    transaction_id: "<transaction_id>", // REQUIRED | string | T12345
+    value: "<value>" // REQUIRED | number | ex. 7.77 | pattern: ^\d\.\d\d$	| min. 0.00
   }
 });
 ```

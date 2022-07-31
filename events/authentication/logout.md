@@ -14,10 +14,10 @@ dataLayer.push({ user_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "logout",
   page_data: {
-    user_login_state: '<user_login_state>', //optional | string | ex. anonymous
+    user_login_state: '<user_login_state>', // optional | string | ex. anonymous
   },
   user_data: {
-    user_id: "<user_id>", //recommended | string | ex. 1234567890
+    user_id: "<user_id>", // recommended | string | ex. 1234567890
   }
 });
 ```

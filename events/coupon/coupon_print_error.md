@@ -13,8 +13,8 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'coupon_print_error',
   event_data: {
-    coupons: '<coupons>', //Required | string - delimited (~) | ex. couponName1~couponName2~couponName3	
-    error_message: '<error_message>', //Required | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address	
+    coupons: '<coupons>', // REQUIRED | string - delimited (~) | ex. couponName1~couponName2~couponName3	
+    error_message: '<error_message>', // REQUIRED | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address	
   }
 });
 ```

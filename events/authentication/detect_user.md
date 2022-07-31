@@ -17,10 +17,10 @@ dataLayer.push({ event_data: null, user_data: null });  // Clear the previous ev
 dataLayer.push({
   event: "detect_user",
   page_data: {
-    user_login_state: '<user_login_state>', //recommended | string | ex. 1234567890	
+    user_login_state: '<user_login_state>', // recommended | string | ex. 1234567890	
   },
   user_data: {
-    user_id: "<user_id>", //optional | string | ex. authenticated, anonymous
+    user_id: "<user_id>", // optional | string | ex. authenticated, anonymous
   }
 });
 ```

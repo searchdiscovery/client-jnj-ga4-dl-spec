@@ -14,7 +14,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'coupon_print',
   event_data: {
-    coupons: '<coupons>', //Required | string - delimited (~) | ex. couponName1~couponName2~couponName3	
+    coupons: '<coupons>', // REQUIRED | string - delimited (~) | ex. couponName1~couponName2~couponName3	
   }
 });
 ```

@@ -14,9 +14,9 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'select_coupon',
   event_data: {
-    identifier: '<identifier>', //recommended | string | ex. neutrogena_discount, free_shipping_q421
-    name: '<name>', //Required | string | ex. neutrogena_discount, free_shipping_q421
-    type: '<type>' //recommended | string | ex. discount, promo
+    identifier: '<identifier>', // recommended | string | ex. neutrogena_discount, free_shipping_q421
+    name: '<name>', // REQUIRED | string | ex. neutrogena_discount, free_shipping_q421
+    type: '<type>' // recommended | string | ex. discount, promo
   }
 });
 ```

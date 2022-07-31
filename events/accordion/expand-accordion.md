@@ -32,7 +32,7 @@ dataLayer.push({
     name: "<name>", // optional | string | ex. FAQs, 2
     heading: "<heading>", // REQUIRED | string | ex. "Are our products safe?"	
     index: "<index>", // optional | integer | ex. 1 | min. lgth. 1 | min. 1
-    type: "<type>" //recommended | integer | ex. FAQ, product
+    type: "<type>" // recommended | integer | ex. FAQ, product
   }
 });
 ```

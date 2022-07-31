@@ -14,9 +14,9 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "remove_from_cart",
   ecommerce: {
-    currency: "<currency>", //recommended | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
-    items: "<items>", //Required | array | ex. [{item_id: "test"}]
-    value: "<value>" //recommended | number | ex. 7.77 | pattern: ^\d\.\d\d$	| min. 0.00
+    currency: "<currency>", // recommended | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
+    items: "<items>", // REQUIRED | array | ex. [{item_id: "test"}]
+    value: "<value>" // recommended | number | ex. 7.77 | pattern: ^\d\.\d\d$	| min. 0.00
   }
 });
 ```

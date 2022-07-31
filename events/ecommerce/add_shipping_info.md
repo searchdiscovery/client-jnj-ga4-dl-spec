@@ -14,11 +14,11 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_shipping_info",
   ecommerce: {
-    coupon: "<coupon>", //recommended | string | ex. SUMMER_FUN | pattern: ^[A-Za-z0-9_]+$
-    currency: "<currency>", //recommended | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
-    items: "<items>", //Required | array | ex. [{item_id: "test"}]	
-    shipping_tier: "<shipping_tier>", //recommended | string | ex. ground | pattern: ^[a-z_]+$
-    value: "<value>" //recommended | number | ex. 7.77 | pattern: ^\d\.\d\d$	 | min. 0.00
+    coupon: "<coupon>", // recommended | string | ex. SUMMER_FUN | pattern: ^[A-Za-z0-9_]+$
+    currency: "<currency>", // recommended | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
+    items: "<items>", // REQUIRED | array | ex. [{item_id: "test"}]	
+    shipping_tier: "<shipping_tier>", // recommended | string | ex. ground | pattern: ^[a-z_]+$
+    value: "<value>" // recommended | number | ex. 7.77 | pattern: ^\d\.\d\d$	 | min. 0.00
   }
 });
 ```

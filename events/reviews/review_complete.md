@@ -16,8 +16,8 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'review_complete',
   event_data: {
-    rating: "<rating>", //Required | string | ex. 12345
-    item_id: "<item_id>" //recommended | string | ex. 3
+    rating: "<rating>", // REQUIRED | string | ex. 12345
+    item_id: "<item_id>" // recommended | string | ex. 3
   }
 });
 ```

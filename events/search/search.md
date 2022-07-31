@@ -14,9 +14,9 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "search",
   event_data: {
-    corrected_term: "<search_term_corrected>", //recommended | string | ex. suns
-    search_term: "<search_term>", //Required | string | ex. sunscreen
-    search_type: "<search_type>", //Required | string | ex ecp_locator,product,site	
+    corrected_term: "<search_term_corrected>", // recommended | string | ex. suns
+    search_term: "<search_term>", // REQUIRED | string | ex. sunscreen
+    search_type: "<search_type>", // REQUIRED | string | ex ecp_locator,product,site	
   }
 });
 ```

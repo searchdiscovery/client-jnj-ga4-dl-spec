@@ -14,13 +14,13 @@ dataLayer.push({ event_data: null, user_data: null });  // Clear the previous ev
 dataLayer.push({
   event: "login",
   event_data: {
-    method: "<method>", //recommended | string | ex. google, linkedin, email and password
+    method: "<method>", // recommended | string | ex. google, linkedin, email and password
   },
   page_data: {
-    user_login_state: '<user_login_state>', //optional | string | ex. authenticated, anonymous
+    user_login_state: '<user_login_state>', // optional | string | ex. authenticated, anonymous
   },
   user_data: {
-    user_id: "<user_id>", //recommended | string | ex. 1234567890
+    user_id: "<user_id>", // recommended | string | ex. 1234567890
   }
 });
 ```

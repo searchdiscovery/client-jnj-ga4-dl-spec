@@ -40,10 +40,10 @@ dataLayer.push({
     file_extension: "<file_extension>", // recommended | string | ex. pdf
     file_name: "<file_name>", // recommended | string | ex. example.pdf
     identifier: "<identifier>", // optional | string | ex. uniquely_created_id
-    link_url: "<link_url>", // Required | string | ex. https://www.example.com/form
-    link_id: "<link_id>", // Required | string | ex. submit-button
-    link_classes: "<link_classes>", // Required | string | ex. button-red
-    link_text: "<link_text>", // Required | string | ex. download pdf
+    link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/form
+    link_id: "<link_id>", // REQUIRED | string | ex. submit-button
+    link_classes: "<link_classes>", // REQUIRED | string | ex. button-red
+    link_text: "<link_text>", // REQUIRED | string | ex. download pdf
     navigation_ancestry: "<navigation_ancestry>", // recommended | string - delimited (~) | ex. about~our ceo
     outbound: "<outbound>", // optional | boolean | ex. false
     region_ancestry: "<region_ancestry>", // recommended | string - delimited (~) | ex. header~navigation

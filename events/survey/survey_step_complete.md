@@ -19,12 +19,12 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'survey_step_complete',
   event_data: {
-    identifier: '<identifier>', //recommended | string | ex. cancel_subscription_flow, free_trial
-    name: '<name>', //Required | string | ex. cancel_subscription_flow, free_trial
-    type: '<type>', //Required | string | ex. survey, lead_generation
-    step_choice: '<step_choice>', //recommended | string | Radio buttons or select lists only | ex. Too Expensive,Using Another Product/Brand 
-    step_name: '<step_name>', //recommended | string | ex. why_are_you_cancelling, which_product
-    step_number: '<step_number>' //recommended | integer | ex. 1, 2, 3
+    identifier: '<identifier>', // recommended | string | ex. cancel_subscription_flow, free_trial
+    name: '<name>', // REQUIRED | string | ex. cancel_subscription_flow, free_trial
+    type: '<type>', // REQUIRED | string | ex. survey, lead_generation
+    step_choice: '<step_choice>', // recommended | string | Radio buttons or select lists only | ex. Too Expensive,Using Another Product/Brand 
+    step_name: '<step_name>', // recommended | string | ex. why_are_you_cancelling, which_product
+    step_number: '<step_number>' // recommended | integer | ex. 1, 2, 3
   }
 });
 ```

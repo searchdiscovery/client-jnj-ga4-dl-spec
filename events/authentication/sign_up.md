@@ -14,7 +14,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'sign_up',
   event_data: {
-    method: '<method>' //recommended | string | ex. local, social_login
+    method: '<method>' // recommended | string | ex. local, social_login
   }
 });
 ```

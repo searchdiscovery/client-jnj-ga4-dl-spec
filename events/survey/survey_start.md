@@ -21,9 +21,9 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'survey_start',
   event_data: {
-    identifier: '<identifier>', //recommended | string | ex. cancel_subscription_flow, free_trial
-    name: '<name>', //Required | string | ex. cancel_subscription_flow, free_trial
-    type: '<type>' //Required | string | ex. survey, lead_generation
+    identifier: '<identifier>', // recommended | string | ex. cancel_subscription_flow, free_trial
+    name: '<name>', // REQUIRED | string | ex. cancel_subscription_flow, free_trial
+    type: '<type>' // REQUIRED | string | ex. survey, lead_generation
   }
 });
 ```

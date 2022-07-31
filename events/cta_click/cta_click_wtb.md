@@ -29,9 +29,9 @@ dataLayer.push({
   event: "cta_click_wtb",
   event_data: {
     affiliation: "<affiliation">, //recommeded | string | ex. Amazon.com, Walmart.com, CVS
-    category: "<category>", //optional | string | ex. find online, find locally
-    link_text: "<link_text>", //Required | string | ex. Add to Cart, Buy Now, Get Directions, store hours
-    link_url: "<link_url>", //Required | string | ex. https://www.example.com/link?test=testing
+    category: "<category>", // optional | string | ex. find online, find locally
+    link_text: "<link_text>", // REQUIRED | string | ex. Add to Cart, Buy Now, Get Directions, store hours
+    link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/link?test=testing
   }
 });
 ```

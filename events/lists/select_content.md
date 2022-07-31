@@ -31,14 +31,14 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "select_content",
   event_data: {
-    content_type: "<content_type>", //recommended | string | ex. article, blog, page	
-    facets: "<facets>", //optional | string - double delimited (:)(~) | category:skin_health~featured_as:best_seller	
-    identifier: "<identifier>", //recommended | string | ex. ecp_locator, free_trial
-    index: "<index>", //Required | integer | ex. 5
-    list_type: "<list_type>", //optional | string | ex. cards, search_results	
-    name: "<name>", //Required | string | ex. purchase_product
-    search_term: "<search_term>", //optional | string | ex. sunscreen
-    search_type: "<search_type>", //optional | string | site, filter_by_group	
+    content_type: "<content_type>", // recommended | string | ex. article, blog, page	
+    facets: "<facets>", // optional | string - double delimited (:)(~) | category:skin_health~featured_as:best_seller	
+    identifier: "<identifier>", // recommended | string | ex. ecp_locator, free_trial
+    index: "<index>", // REQUIRED | integer | ex. 5
+    list_type: "<list_type>", // optional | string | ex. cards, search_results	
+    name: "<name>", // REQUIRED | string | ex. purchase_product
+    search_term: "<search_term>", // optional | string | ex. sunscreen
+    search_type: "<search_type>", // optional | string | site, filter_by_group	
   }
 });
 ```

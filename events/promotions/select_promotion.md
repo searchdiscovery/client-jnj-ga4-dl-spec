@@ -29,12 +29,12 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "select_promotion",
   ecommerce: {
-    facets: "<facets>", //optional | string - double delimited (:)(,) | ex. category:skin_health, featured_as:best_seller
-    list_type: "<list_type>", //optional | string | ex. cards, carousel, popular_products, search_results	
-    search_term: "<search_term>", //optional | string | ex. sunscreen
-    search_type: "<search_type>", //optional | string | site, filter_by_group
-    index: "<index>", //Required | integer | ex. 5
-    items: "<items>" //Required | array | ex. [{item_id: "test"}]
+    facets: "<facets>", // optional | string - double delimited (:)(,) | ex. category:skin_health, featured_as:best_seller
+    list_type: "<list_type>", // optional | string | ex. cards, carousel, popular_products, search_results	
+    search_term: "<search_term>", // optional | string | ex. sunscreen
+    search_type: "<search_type>", // optional | string | site, filter_by_group
+    index: "<index>", // REQUIRED | integer | ex. 5
+    items: "<items>" // REQUIRED | array | ex. [{item_id: "test"}]
   }
 });
 ```

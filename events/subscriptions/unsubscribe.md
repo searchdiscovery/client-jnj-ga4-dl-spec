@@ -18,10 +18,10 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'subscribe',
   event_data: {
-    identifier: '<identifier>', //recommended | string | ex. neutrogena_newsletter_123, jnj_promos_123
-    name: '<name>', //Required | string | ex. neutrogena_newsletter, jnj_promos
-    type: '<type>', //Required | string | ex. newsletter, promos
-    method: '<method>' //recommended | string | ex. email
+    identifier: '<identifier>', // recommended | string | ex. neutrogena_newsletter_123, jnj_promos_123
+    name: '<name>', // REQUIRED | string | ex. neutrogena_newsletter, jnj_promos
+    type: '<type>', // REQUIRED | string | ex. newsletter, promos
+    method: '<method>' // recommended | string | ex. email
   }
 });
 ```

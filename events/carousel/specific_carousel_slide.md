@@ -26,10 +26,10 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'specific_carousel_slide',
   event_data: {
-    identifier: "<identifier>", //Required | string | ex. 12345abcde12345
-    name: "<name>", //recommended | string | ex. Most Popular Blog Posts, 2	
-    index: "<index>", //recommended | integer | ex. 1 | min. lgth. 1 | min. 1
-    target_index: "<target_index>" //recommended | integer | ex. 2 | min. lgth. 1 | min. 1 
+    identifier: "<identifier>", // REQUIRED | string | ex. 12345abcde12345
+    name: "<name>", // recommended | string | ex. Most Popular Blog Posts, 2	
+    index: "<index>", // recommended | integer | ex. 1 | min. lgth. 1 | min. 1
+    target_index: "<target_index>" // recommended | integer | ex. 2 | min. lgth. 1 | min. 1 
   }
 });
 ```

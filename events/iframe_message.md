@@ -29,14 +29,14 @@ dataLayer.push({
   event_data: {
     category: "<category>", // recommended | string | ex. audio, where to buy, video
     category2: "<category2>", // optional | string | ex. audio, where to buy, video
-    data: "<data>", // Required | variable | ex. {event: 'play', videoName: 'my video', videoProvider: 'vimeo'}
+    data: "<data>", // REQUIRED | variable | ex. {event: 'play', videoName: 'my video', videoProvider: 'vimeo'}
     html_classes: "<classes>", // optional | string | ex. audio-embed
-    html_element: "<element>", // Required | HTMLIFrameElement | ex. <iframe src="sample.com/iframe" ...>
+    html_element: "<element>", // REQUIRED | HTMLIFrameElement | ex. <iframe src="sample.com/iframe" ...>
     html_id: "<id>", // optional | string | ex. hero-video
     identifier: "<identifier>", // optional | string | ex. vidyard-video-embed
     name: "<name>", // optional | string | ex. vidyard video embed
-    page_hostname: "<page_hostname>", // Required | string | ex. vimeo.com
-    page_location: "<page_location>", // Required | string | ex. https://www.example.com
+    page_hostname: "<page_hostname>", // REQUIRED | string | ex. vimeo.com
+    page_location: "<page_location>", // REQUIRED | string | ex. https://www.example.com
   }
 });
 ```

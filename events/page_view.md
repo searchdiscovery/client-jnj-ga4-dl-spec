@@ -19,21 +19,21 @@ dataLayer.push({ page_data: null, user_data: null });  // Clear the previous att
 dataLayer.push({
   event: 'page_view',
   page_data: {
-    language: '<language>', // Required | string | ex. en
+    language: '<language>', // REQUIRED | string | ex. en
     page_category: '<category>', // recommended | string | ex. sun protection
     page_category2: '<page_category2>', // optional | string | ex. waterproof
     page_category3: '<page_category3>', // optional | string | ex. waterproof
     page_category4: '<page_category4>', // optional | string | ex. waterproof
     page_category5: '<page_category5>', // optional | string | ex. waterproof
     page_id: '<page_id>', // recommended | string | ex. 12345
-    page_location: '<page_location>', // Required | string | ex. https://www.example.com
+    page_location: '<page_location>', // REQUIRED | string | ex. https://www.example.com
     page_name: '<page_name>', // optional | string | ex. homepage, search results, product:sample
-    page_referrer: '<page_referrer>', // Required | string | ex. https://www.example.com
-    page_title: '<page_title>', // Required | string | ex. homepage, search results, product:sample
+    page_referrer: '<page_referrer>', // REQUIRED | string | ex. https://www.example.com
+    page_title: '<page_title>', // REQUIRED | string | ex. homepage, search results, product:sample
     page_type: '<page_type>', // recommended | string | ex. article, blog, homepage, product
-    site_brand: '<site_brand>', // Required | string | ex. neutrogena
-    site_country: '<site_country>', // Required | string | ex us, au, is, jp
-    site_region: '<site_region>', // Required | string | ex. EMEA
+    site_brand: '<site_brand>', // REQUIRED | string | ex. neutrogena
+    site_country: '<site_country>', // REQUIRED | string | ex us, au, is, jp
+    site_region: '<site_region>', // REQUIRED | string | ex. EMEA
     site_section: '<site_section>', // recommended | string | ex. products
     site_section2: '<site_section2>', // recommended | string | ex. sun protection products
     site_section3: '<site_section3>', // recommended | string | ex. sun protection products

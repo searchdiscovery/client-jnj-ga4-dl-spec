@@ -14,13 +14,13 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'video_complete',
   event_data: {
-    video_current_time: '<video_current_time>', //Required | string | ex. 15
-    video_duration: '<video_duration>', //Required | string | ex. 600
-    video_percent: '<video_percent>', //Required | string | ex. 15
-    video_provider: '<video_provider>', //Required | string | ex. youtube, vimeo
-    video_title: '<video_title>', //Required | string | ex. My Video
-    video_url: '<video_url>', //Required | string | https://youtu.be/12345ABC
-    visible: '<visible>', //Required | boolean | ex. true
+    video_current_time: '<video_current_time>', // REQUIRED | string | ex. 15
+    video_duration: '<video_duration>', // REQUIRED | string | ex. 600
+    video_percent: '<video_percent>', // REQUIRED | string | ex. 15
+    video_provider: '<video_provider>', // REQUIRED | string | ex. youtube, vimeo
+    video_title: '<video_title>', // REQUIRED | string | ex. My Video
+    video_url: '<video_url>', // REQUIRED | string | https://youtu.be/12345ABC
+    visible: '<visible>', // REQUIRED | boolean | ex. true
   }
 });
 ```

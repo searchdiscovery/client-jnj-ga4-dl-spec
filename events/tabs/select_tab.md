@@ -25,10 +25,10 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "select_tab",
   event_data: {
-    identifier: "<identifier>", //Required | string | ex. 12345abcde12345
-    name: "<name>", //recommended | string | ex. FAQs, 2
-    heading: "<heading>", //Required | string | ex. Are our products safe?
-    index: "<index>", //recommended | integer | ex 1, 5
+    identifier: "<identifier>", // REQUIRED | string | ex. 12345abcde12345
+    name: "<name>", // recommended | string | ex. FAQs, 2
+    heading: "<heading>", // REQUIRED | string | ex. Are our products safe?
+    index: "<index>", // recommended | integer | ex 1, 5
   }
 });
 ```

@@ -14,9 +14,9 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'chat_start',
   event_data: {
-    identifier: '<identifier>', //optional | string | ex. ecp_locator, free_trial
-    name: '<name>', //optional | string | ex. ecp_locator, free_trial
-    type: '<type>' //optional | string | ex. contact, lead_generation
+    identifier: '<identifier>', // optional | string | ex. ecp_locator, free_trial
+    name: '<name>', // optional | string | ex. ecp_locator, free_trial
+    type: '<type>' // optional | string | ex. contact, lead_generation
   }
 });
 ```

@@ -16,10 +16,10 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'survey_error',
   event_data: {
-    error_message: '<error_message>', //Required | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address
-    identifier: '<identifier>', //recommended | string | ex. cancel_subscription_flow, free_trial
-    name: '<name>', //Required | string | ex. cancel_subscription_flow, free_trial
-    type: '<type>', //Required | string | ex. survey, lead_generation
+    error_message: '<error_message>', // REQUIRED | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address
+    identifier: '<identifier>', // recommended | string | ex. cancel_subscription_flow, free_trial
+    name: '<name>', // REQUIRED | string | ex. cancel_subscription_flow, free_trial
+    type: '<type>', // REQUIRED | string | ex. survey, lead_generation
   }
 });
 ```

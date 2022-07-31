@@ -14,7 +14,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'scroll_milestone',
   event_data: {
-    milestone: '<milestone>' // Required | string | ex. 25, 50, 75
+    milestone: '<milestone>' // REQUIRED | string | ex. 25, 50, 75
   }
 });
 ```

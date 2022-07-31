@@ -16,7 +16,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'review_start',
   event_data: {
-    item_id: "<item_id>" //Required | string | ex. 12345
+    item_id: "<item_id>" // REQUIRED | string | ex. 12345
   }
 });
 ```

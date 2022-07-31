@@ -7,15 +7,20 @@ Do not clear the page_data variable before setting user_login_state here as this
 ## Javascript Code
 
 ```js
+// When:
+// User authentication exists, but the 'authentication state' may not be known by the time the page_view event is fired.
+// NOTE: Do not clear the page_data variable before setting user_login_state here. This is not a page view.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null, user_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "detect_user",
   page_data: {
-    user_login_state: '<user_login_state>',
+    user_login_state: '<user_login_state>', //recommended | string | ex. 1234567890	
   },
   user_data: {
-    user_id: "<user_id>",
+    user_id: "<user_id>", //optional | string | ex. authenticated, anonymous
   }
 });
 ```

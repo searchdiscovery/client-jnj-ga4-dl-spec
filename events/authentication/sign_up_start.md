@@ -5,12 +5,16 @@ Fire whenever a user views the first step of the account creation form.
 ## Javascript Code
 
 ```js
+// When:
+// User views the first step of account creation process
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'sign_up_start'
   event_data: {
-    method: '<method>'
+    method: '<method>' //recommended | string | ex. local, social_login
   }
 });
 ```

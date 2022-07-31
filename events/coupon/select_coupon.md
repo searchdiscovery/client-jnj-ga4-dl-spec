@@ -5,14 +5,18 @@ Fire whenever a user selects a coupon.
 ## Javascript Code
 
 ```js
+// When:
+// User selects a coupon
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'select_coupon',
   event_data: {
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>'
+    identifier: '<identifier>', //recommended | string | ex. neutrogena_discount, free_shipping_q421
+    name: '<name>', //Required | string | ex. neutrogena_discount, free_shipping_q421
+    type: '<type>' //recommended | string | ex. discount, promo
   }
 });
 ```

@@ -19,16 +19,20 @@ If using data attributes, the `data-layer-event` attribute should be dynamically
 ## Javascript Code
 
 ```js
+// When:
+// User expands accordion item.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "collapse_accordion",
   event_data: {
-    identifier: "<identifier>",
-    name: "<name>",
-    heading: "<heading>",
-    index: "<index>",
-    type: "<type>"
+    identifier: "<identifier>", // REQUIRED | string | ex. 12345abcde12345
+    name: "<name>", // optional | string | ex. FAQs, 2
+    heading: "<heading>", // REQUIRED | string | ex. "Are our products safe?"	
+    index: "<index>", // optional | integer | ex. 1 | min. lgth. 1 | min. 1
+    type: "<type>" //recommended | integer | ex. FAQ, product
   }
 });
 ```

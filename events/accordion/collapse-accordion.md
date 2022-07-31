@@ -28,11 +28,11 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "collapse_accordion",
   event_data: {
-    identifier: "<identifier>", // REQUIRED | string | ID of the accordion (ie "tab-menu-2814--2")
-    name: "<name>", // optional | string | name of the accordion (ie "beauty-products")
-    heading: "<heading>", // REQUIRED | string | text heading of the accordion (ie "Beauty")
-    index: "<index>", // optional | string | slot number of the accordion item (ie "4") | 1-indexed
-    type: "<type>" // optional | string | accordion type (ie "product")
+    identifier: "<identifier>", // REQUIRED | string | ex. 12345abcde12345
+    name: "<name>", // optional | string | ex. FAQs, 2
+    heading: "<heading>", // REQUIRED | string | ex. "Are our products safe?"	
+    index: "<index>", // optional | integer | ex. 1 | min. lgth. 1 | min. 1
+    type: "<type>" //recommended | integer | ex. FAQ, product
   }
 });
 ```

@@ -1,18 +1,22 @@
 # Remove From Cart
 
-Fire whenever a user adds one or more items to their cart.
+Fire whenever a user removes one or more items from their cart.
 
 ## Javascript Code
 
 ```js
+// When:
+// User removes one or more items from cart
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "remove_from_cart",
   ecommerce: {
-    currency: "<currency>",
-    items: "<items>",
-    value: "<value>"
+    currency: "<currency>", //recommended | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
+    items: "<items>", //Required | array | ex. [{item_id: "test"}]
+    value: "<value>" //recommended | number | ex. 7.77 | pattern: ^\d\.\d\d$	| min. 0.00
   }
 });
 ```

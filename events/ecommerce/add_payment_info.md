@@ -5,16 +5,20 @@ Fire whenever a user submits their payment information.
 ## Javascript Code
 
 ```js
+// When:
+// User user submits payment information
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_payment_info",
   ecommerce: {
-    coupon: "<coupon>",
-    currency: "<currency>",
-    items: "<items>",
-    payment_method: "<payment_method>",
-    value: "<value>"
+    coupon: "<coupon>", //recommended | string | ex. SUMMER_FUN | pattern: ^[A-Za-z0-9_]+$
+    currency: "<currency>", //recommended | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
+    items: "<items>", //Required | array | ex. [{item_id: "test"}]	
+    payment_method: "<payment_method>", //recommended | string | ex. credit_card | pattern: ^[a-z_]+$
+    value: "<value>" //recommended | number | ex. 7.77 | pattern: ^\d\.\d\d$	 | min. 0.00
   }
 });
 ```

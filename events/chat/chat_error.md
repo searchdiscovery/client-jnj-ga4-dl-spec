@@ -5,15 +5,19 @@ Fire whenever a user experiences an error during a chat session.
 ## Javascript Code
 
 ```js
+// When:
+// User experiences an error during a chat session
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'chat_error',
   event_data: {
-    error_message: '<error_message>',
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>',
+    error_message: '<error_message>', //Required | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address	
+    identifier: '<identifier>', //optional | string | ex. ecp_locator, free_trial
+    name: '<name>', //optional | string | ex. ecp_locator, free_trial
+    type: '<type>', //optional | string | ex. contact, lead_generation
   }
 });
 ```

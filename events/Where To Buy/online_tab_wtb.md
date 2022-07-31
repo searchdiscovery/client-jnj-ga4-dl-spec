@@ -5,12 +5,16 @@ Fire whenever a user successfully switches to the online tab wiithin the WTB too
 ## Javascript Code
 
 ```js
+// When:
+// User successfully switches to the online tab within the WTB tool.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null, user_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'online_tab_wtb',
   event_data: {
-    category: '<category>',
+    category: '<category>', // **Unknown**
   },
 });
 ```

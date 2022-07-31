@@ -5,18 +5,22 @@ Fire whenever a user successfully calls a store.
 ## Javascript Code
 
 ```js
+// When:
+// User successfully calls a store.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null, user_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'call_store_wtb',
   event_data: {
-    compontent_type: '<compontent_type>',
-    item_name: '<item_name>'
-    item_sku: '<item_sku>',
-    item_upc: '<item_sku>',
-    item_brand: '<item_brand>',
-    link_url: '<item_brand>',
-    affiliation: '<item_brand>',
+    compontent_type: '<compontent_type>', // REQUIRED | string | ex. PriceSpider, ChannelAdvisor
+    item_name: '<item_name>', // REQUIRED | string | ex. 
+    item_sku: '<item_sku>', // REQUIRED | string | ex. CW21001
+    item_upc: '<item_upc>', // **Unknown** | string | ex. 012345678905 (12 digits)
+    item_brand: '<item_brand>', // REQUIRED | string | ex. Tylenol, Zyretc, Lsiterine
+    link_url: '<item_brand>', // REQUIRED | string | ex. www.amazon.com
+    affiliation: '<item_brand>', // REQUIRED | string | ex. Wallmart, CVS
   },
 });
 ```

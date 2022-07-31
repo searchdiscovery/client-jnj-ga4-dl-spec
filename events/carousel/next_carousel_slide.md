@@ -17,15 +17,19 @@ Fire whenever a user interacts with the next carousel slide control
 ## Javascript Code
 
 ```js
+// When:
+// User interacts with 'next' carousel slide control
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "next_carousel_slide",
   event_data: {
-    identifier: "<identifier>",
-    name: "<name>",
-    index: "<index>",
-    target_index: "<target_index>"
+    identifier: "<identifier>", //Required | string | ex. 12345abcde12345
+    name: "<name>", //recommended | string | ex. Most Popular Blog Posts, 2	
+    index: "<index>", //recommended | integer | ex. 1 | min. lgth. 1 | min. 1
+    target_index: "<target_index>" //recommended | integer | ex. 2 | min. lgth. 1 | min. 1 
   }
 });
 ```

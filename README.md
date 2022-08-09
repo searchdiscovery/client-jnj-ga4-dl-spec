@@ -19,4 +19,4 @@ For instance, the main page `<header>` tag might have the `data-layer-region="he
 See the **[data-attributes](data-attributes)** folder for detailed implementation guidelines.
 
 ## Questions/Comments
-For any questions or comments, please contact cory.watson@searchdiscovery.com.
+For any questions or comments, please contact charlie.tysse@searchdiscovery.com.

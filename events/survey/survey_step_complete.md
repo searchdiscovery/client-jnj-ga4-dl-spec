@@ -9,18 +9,23 @@ It is important to note that the `step_choice` attrbiute which can possibly incl
 ## Javascript Code
 
 ```js
+// When:
+// User successfully completes a survey step/section
+// NOTE: step_choice attribute may contain PII data and should be excluded from this event where applicable
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'survey_step_complete',
   event_data: {
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>',
-    step_choice: '<step_choice>',  // Only radio buttons or select lists
-    step_choice_method: '<step_choice_method>',
-    step_name: '<step_name>',
-    step_number: 1
+    identifier: '<identifier>', // recommended | string | ex. cancel_subscription_flow, free_trial
+    name: '<name>', // REQUIRED | string | ex. cancel_subscription_flow, free_trial
+    type: '<type>', // REQUIRED | string | ex. survey, lead_generation
+    step_choice: '<step_choice>', // recommended | string | Radio buttons or select lists only | ex. Too Expensive,Using Another Product/Brand
+    step_choice_method: '<step_choice_method>', // recommended | string | ex. automatic, user-selected
+    step_name: '<step_name>', // recommended | string | ex. why_are_you_cancelling, which_product
+    step_number: '<step_number>' // recommended | integer | ex. 1, 2, 3
   }
 });
 ```

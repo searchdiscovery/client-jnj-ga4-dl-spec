@@ -7,15 +7,19 @@ This is in contrast to `form_complete` which occurs when a submission succeeds.
 ## Javascript Code
 
 ```js
+// When:
+// User unsuccessfully completes a form and data is not received or processed
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'form_error',
   event_data: {
-    error_message: '<error_message>',
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>'
+    error_message: '<error_message>', // REQUIRED | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address
+    identifier: '<identifier>', // recommended | string | ex. ecp_locator, free_trial	
+    name: '<name>', // REQUIRED | string | ex. ecp_locator, free_trial
+    type: '<type>' // recommended | string | ex. form_field_validation, server_error	
   }
 });
 ```

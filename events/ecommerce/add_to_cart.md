@@ -5,14 +5,18 @@ Fire whenever a user adds one or more items to their cart.
 ## Javascript Code
 
 ```js
+// When:
+// User adds one or more items to cart
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_cart",
   ecommerce: {
-    currency: "<currency>",
-    items: "<items>",
-    value: "<value>"
+    currency: "<currency>", // recommended | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
+    items: "<items>", // REQUIRED | array | ex. [{item_id: "test"}]
+    value: "<value>" // recommended | number | ex. 7.77 | pattern: ^\d\.\d\d$	 | min. 0.00
   }
 });
 ```

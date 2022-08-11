@@ -7,18 +7,23 @@ This event should also be fired for the "Filter By Group" component when the lis
 ## Javascript Code
 
 ```js
+// When:
+// User sees multiple product links in a list that forward to a product detail page
+// 'Filter By Group' component list is initially displayed or updated after a facet is applied, but only for products
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "view_item_list",
   ecommerce: {
-    facets: "<facets>",
-    items: "<items>",
-    item_list_id: "<item_list_id>",
-    item_list_name: "<item_list_name>",
-    list_type: "<list_type>",
-    search_term: "<search_term>",
-    search_type: "<search_type>",
+    facets: "<facets>", // optional | string - double delimited (:)(~) | ex. category:skin_health~featured_as:best_seller	
+    items: "<items>", // REQUIRED | array | ex. [{item_id: "070501110485", item_name: "Neutrogena Hydro Boost Gel-Cream"}]	
+    item_list_id: "<item_list_id>", // recommended | string | ex. 12345abcde12345
+    item_list_name: "<item_list_name>", // recommended | string | ex. filter_by_group, recommended_products, recently_viewed_products
+    list_type: "<list_type>", // optional | string | ex. cards, search_results	
+    search_term: "<search_term>", // optional | string | ex. sunscreen
+    search_type: "<search_type>", // optional | string | ex. site, filter_by_group
   }
 });
 ```

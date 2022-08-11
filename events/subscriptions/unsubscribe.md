@@ -9,15 +9,19 @@ TBD
 ## Javascript Code
 
 ```js
+// When:
+// User unsubscribes to an email or product
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'subscribe',
   event_data: {
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>',
-    method: '<method>'
+    identifier: '<identifier>', // recommended | string | ex. neutrogena_newsletter_123, jnj_promos_123
+    name: '<name>', // REQUIRED | string | ex. neutrogena_newsletter, jnj_promos
+    type: '<type>', // REQUIRED | string | ex. newsletter, promos
+    method: '<method>' // recommended | string | ex. email
   }
 });
 ```

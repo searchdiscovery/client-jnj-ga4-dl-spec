@@ -11,14 +11,19 @@ This could be done with data attributes and detected via GTM at DOM Ready, but i
 ## Javascript Code
 
 ```js
+// When:
+// User starts to fill our a form. Event fires after user input into the first form field 
+// and should only fire once. onchange(), onfocus(), and GTM may be helpful.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'form_start',
   event_data: {
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>'
+    identifier: '<identifier>', // recommended | string | ex. ecp_locator, free_trial	
+    name: '<name>', // REQUIRED | string | ex. ecp_locator, free_trial	
+    type: '<type>' // REQUIRED | string | ex. contact, lead_generation	
   }
 });
 ```

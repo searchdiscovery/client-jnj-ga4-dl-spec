@@ -9,14 +9,18 @@ This could be done with data attributes and detected via GTM at DOM Ready, but i
 ## Javascript Code
 
 ```js
+// When:
+// User presented with survey on a page
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'survey_view',
   event_data: {
-    identifier: '<identifier>',
-    name: '<name>',
-    type: '<type>'
+    identifier: '<identifier>', // recommended | string | ex. cancel_subscription_flow, free_trial
+    name: '<name>', // REQUIRED | string | ex. cancel_subscription_flow, free_trial
+    type: '<type>' // REQUIRED | string | ex. survey, lead_generation
   }
 });
 ```

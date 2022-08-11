@@ -17,34 +17,40 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
   data-layer-identifier="<identifier>"
   data-layer-link_text="<link_text>"
   data-layer-link_url="<link_url>"
+  data-layer-link_hostname="<link_hostname>"      
   data-layer-outbound="<outbound>"
-  data-layer-type="<type>"
+  data-layer-protocol="<type>"
 >
 ```
 
 ## Javascript Code
 
 ```js
+// When:
+// User clicks a non anchor tag used for an action, i.e. <button>
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "click",
   event_data: {
-    component_ancestry: "<component_ancestry>",
-    category: "<category>",
-    category2: "<category2>",
-    category3: "<category3>",
-    category4: "<category4>",
-    category5: "<category5>",
-    identifier: "<identifier>",
-    link_classes: "<link_classes>",
-    link_id: "<link_id>",
-    link_text: "<link_text>",
-    link_url: "<link_url>",
-    navigation_ancestry: "<navigation_ancestry>",
-    outbound: "<outbound>",
-    region_ancestry: "<region_ancestry>",
-    type: "<type>",
+    component_ancestry: "<component_ancestry>", // recommended | string | string - delimeted (~) | ex. hero~product carousel
+    category: "<category>", // optional | string | ex. cta_links, wtb_links
+    category2: "<category2>", // optional | string | ex. cta_links, wtb_links
+    category3: "<category3>", // optional | string | ex. cta_links, wtb_links
+    category4: "<category4>", // optional | string | ex. cta_links, wtb_links
+    category5: "<category5>", // optional | string | ex. cta_links, wtb_links
+    identifier: "<identifier>", // optional | string | ex. uniquely_created_id
+    link_classes: "<link_classes>", // REQUIRED | string | ex. button-red 
+    link_id: "<link_id>", // REQUIRED | string | ex. submit-button
+    link_text: "<link_text>", // REQUIRED | string | ex. click here
+    link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/form
+    link_hostname: "<link_hostname>", // REQUIRED | string | ex. https://www.example.com
+    navigation_ancestry: "<navigation_ancestry>", // recommended | string - delimeted (~) | ex. about~our ceo
+    outbound: "<outbound>", // optional | boolean | ex. false
+    region_ancestry: "<region_ancestry>", // recommended | string - delimeted (~) | ex. header~navigation
+    protocol: "<type>", // REQUIRED | string | ex. http, https, mailto, tel
   }
 });
 ```
@@ -62,7 +68,8 @@ dataLayer.push({
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
 |link_text|string|required|The full text of the link.|click here|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|
+|link_hostname|string|required|The hostname of the link.|https://www.example.com|
 |navigation_ancestry|string|recommended|A delimited string showing all navigation items in the ancestry of link clicked in a multi-tiered menu|about~our leadership~our CEO|
 |outbound|boolean|conditional|Does the link point to a different domain?|false|
 |region_ancestry|string|recommended|A delimited string showing all regions in the ancestry of the link clicked|header~navigation|
-|type|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|
+|protocol|string|required|Records the type of link that was clicked. The type here refers to what comes before the :// on the link itself. Useful for identifying http links that should be https, as well as reporting on mailto, tel, and other alternate link types|http, https, tel, mailto|

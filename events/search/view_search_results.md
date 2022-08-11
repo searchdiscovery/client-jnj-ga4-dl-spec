@@ -6,15 +6,19 @@ This event should also be considered for the "Filter By Group" component if it i
 ## Javascript Code
 
 ```js
+// When:
+// User views search results and does not require a search event to be fired previously
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "view_search_results",
   event_data: {
-    facets: "<refinements>",
-    number_of_items: "<number_of_items>",
-    search_term: "<search_term>",
-    search_type: "<search_type>",
+    facets: "<refinements>", // recommended | string - double delimited (:)(~) | ex. category:skin_health~featured_as:best_seller	
+    number_of_items: "<number_of_items>", // recommended | integer | ex. 324
+    search_term: "<search_term>", // REQUIRED | string | ex. sunscreen
+    search_type: "<search_type>", // REQUIRED | string | ex. ecp_locator, filter_by_group,product, site	
   }
 });
 ```

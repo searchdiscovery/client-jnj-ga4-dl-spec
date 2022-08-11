@@ -4,13 +4,17 @@ Fire whenever a user encounters an error printing a coupon.
 
 ## Javascript Code
 ```js
+// When:
+// User encounters and error printing a coupon
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'coupon_print_error',
   event_data: {
-    coupons: '<coupons>',
-    error_message: '<error_message>',
+    coupons: '<coupons>', // REQUIRED | string - delimited (~) | ex. couponName1~couponName2~couponName3	
+    error_message: '<error_message>', // REQUIRED | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address	
   }
 });
 ```

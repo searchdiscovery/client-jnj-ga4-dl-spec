@@ -7,12 +7,16 @@ An [item](/schemas/item) object should be included, but not as a separate proper
 ## Javascript Code
 
 ```js
+// When:
+// User modifies the first field on a review widget
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'review_start',
   event_data: {
-    item_id: "<item_id>"
+    item_id: "<item_id>" // REQUIRED | string | ex. 12345
   }
 });
 ```

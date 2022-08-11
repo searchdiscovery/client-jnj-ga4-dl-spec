@@ -5,12 +5,16 @@ Fire whenever a user is presented with a coupon rebate offer.
 ## Javascript Code
 
 ```js
+// When:
+// User presented with coupon rebate offer
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'coupon_rebate_offer',
   event_data: {
-    coupons: '<coupons>',
+    coupons: '<coupons>', // REQUIRED | string - delimited (~) | ex. couponName1~couponName2~couponName3	
   }
 });
 ```

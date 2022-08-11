@@ -17,15 +17,21 @@ This event will be automatically detected and fired if the data attributes below
 ## Javascript Code
 
 ```js
+// When:
+// User clicks on a CTA link
+// NOTE: Event is automatically fired if the attributes are added to an HTML anchor element
+// or HTML element representing a link
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "cta_click_wtb",
   event_data: {
-    affiliation: "<affiliation">,
-    category: "<category>",
-    link_text: "<link_text>",
-    link_url: "<link_url>",
+    affiliation: "<affiliation">, //recommeded | string | ex. Amazon.com, Walmart.com, CVS
+    category: "<category>", // optional | string | ex. find online, find locally
+    link_text: "<link_text>", // REQUIRED | string | ex. Add to Cart, Buy Now, Get Directions, store hours
+    link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/link?test=testing
   }
 });
 ```

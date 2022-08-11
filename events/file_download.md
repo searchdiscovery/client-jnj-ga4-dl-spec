@@ -27,23 +27,27 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 ## Javascript Code
 
 ```js
+// When:
+// User clicks a non anchor tag used for a file download, i.e. <button>
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "file_download",
   event_data: {
-    component_ancestry: "<component_ancestry>",
-    file_extension: "<file_extension>",
-    file_name: "<file_name>",
-    identifier: "<identifier>",
-    link_url: "<link_url>",
-    link_id: "<link_id>",
-    link_classes: "<link_classes>",
-    link_text: "<link_text>",
-    navigation_ancestry: "<navigation_ancestry>",
-    outbound: "<outbound>",
-    region_ancestry: "<region_ancestry>",
-    protocol: "<type>"
+    component_ancestry: "<component_ancestry>", // recommended | string - delimited (~) | ex. hero~product carousel
+    file_extension: "<file_extension>", // recommended | string | ex. pdf
+    file_name: "<file_name>", // recommended | string | ex. example.pdf
+    identifier: "<identifier>", // optional | string | ex. uniquely_created_id
+    link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/form
+    link_id: "<link_id>", // REQUIRED | string | ex. submit-button
+    link_classes: "<link_classes>", // REQUIRED | string | ex. button-red
+    link_text: "<link_text>", // REQUIRED | string | ex. download pdf
+    navigation_ancestry: "<navigation_ancestry>", // recommended | string - delimited (~) | ex. about~our ceo
+    outbound: "<outbound>", // optional | boolean | ex. false
+    region_ancestry: "<region_ancestry>", // recommended | string - delimited (~) | ex. header~navigation
+    protocol: "<type>" // recommended | string | ex. http, https, mailto, tel
   }
 });
 ```
@@ -57,6 +61,7 @@ dataLayer.push({
 |file_name|string|recommended|The filename of the file being downloaded.|drug_facts.pdf|
 |identifier|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
+|link_text|string|required|The full text of the link.|click here|
 |link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|

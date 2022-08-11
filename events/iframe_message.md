@@ -18,21 +18,25 @@ This will be automatically collected and fired through GTM for now, but the HTML
 ## Javascript Code
 
 ```js
+// When:
+// Iframe emits a message using window.postMessage method
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'iframe_post_message',
   event_data: {
-    category: "<category>",
-    category2: "<category2>",
-    data: "<data>",
-    html_classes: "<classes>",
-    html_element: "<element>",
-    html_id: "<id>",
-    identifier: "<identifier>",
-    name: "<name>",
-    page_hostname: "<page_hostname>",
-    page_location: "<page_location>",
+    category: "<category>", // recommended | string | ex. audio, where to buy, video
+    category2: "<category2>", // optional | string | ex. audio, where to buy, video
+    data: "<data>", // REQUIRED | variable | ex. {event: 'play', videoName: 'my video', videoProvider: 'vimeo'}
+    html_classes: "<classes>", // optional | string | ex. audio-embed
+    html_element: "<element>", // REQUIRED | HTMLIFrameElement | ex. <iframe src="sample.com/iframe" ...>
+    html_id: "<id>", // optional | string | ex. hero-video
+    identifier: "<identifier>", // optional | string | ex. vidyard-video-embed
+    name: "<name>", // optional | string | ex. vidyard video embed
+    page_hostname: "<page_hostname>", // REQUIRED | string | ex. vimeo.com
+    page_location: "<page_location>", // REQUIRED | string | ex. https://www.example.com
   }
 });
 ```

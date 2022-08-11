@@ -25,19 +25,24 @@ Do not fire this event for product links found in menus.
 ## Javascript Code
 
 ```js
+// When:
+// User clicks on a product link in a list (cards, search, promotions...) that forwards to product detail page. 
+// Do not use this event for product links found in menus.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "select_item",
   ecommerce: {
-    facets: "<facets>",
-    items: "<items>",
-    item_list_id: "<item_list_id>",
-    item_list_name: "<item_list_name>",
-    list_type: "<list_type>",
-    search_term: "<search_term>",
-    search_type: "<search_type>",
-    index: "<index>",
+    facets: "<facets>", // optional | string - double delimited (:)(~) | category:skin_health~featured_as:best_seller	
+    items: "<items>", // REQUIRED | array | ex. [{item_id: "070501110485", item_name: "Neutrogena Hydro Boost Gel-Cream"}]	
+    item_list_id: "<item_list_id>", // recommended | string | ex. 12345abcde12345
+    item_list_name: "<item_list_name>", // recommended | string | ex. filter_by_group, recommended_products, recently_viewed_products
+    list_type: "<list_type>", // optional | string | ex. cards, search_results	
+    search_term: "<search_term>", // optional | string | ex. sunscreen
+    search_type: "<search_type>", // optional | string | ex. site, filter_by_group
+    index: "<index>", // REQUIRED | integer | ex. 5
   }
 });
 ```

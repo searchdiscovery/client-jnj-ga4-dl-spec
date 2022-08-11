@@ -5,14 +5,18 @@ Fire whenever a user performs a search of any kind. This includes product search
 ## Javascript Code
 
 ```js
+// When:
+// User performs a search of any kind and does not require a vew_search_results event to be fired, subsequently.
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "search",
   event_data: {
-    corrected_term: "<search_term_corrected>",
-    search_term: "<search_term>",
-    search_type: "<search_type>",
+    corrected_term: "<search_term_corrected>", // recommended | string | ex. suns
+    search_term: "<search_term>", // REQUIRED | string | ex. sunscreen
+    search_type: "<search_type>", // REQUIRED | string | ex ecp_locator,product,site	
   }
 });
 ```

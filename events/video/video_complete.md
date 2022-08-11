@@ -5,18 +5,22 @@ Fire whenever a video ends. This will usually be picked up automatically by GTM 
 ## Javascript Code
 
 ```js
+// When:
+// Video ends, useful for mobile videos
+
+// Code
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'video_complete',
   event_data: {
-    video_current_time: '<video_current_time>',
-    video_duration: '<video_duration>',
-    video_percent: '<video_percent>',
-    video_provider: '<video_provider>',
-    video_title: '<video_title>',
-    video_url: '<video_url>',
-    visible: '<visible>',
+    video_current_time: '<video_current_time>', // REQUIRED | string | ex. 15
+    video_duration: '<video_duration>', // REQUIRED | string | ex. 600
+    video_percent: '<video_percent>', // REQUIRED | string | ex. 15
+    video_provider: '<video_provider>', // REQUIRED | string | ex. youtube, vimeo
+    video_title: '<video_title>', // REQUIRED | string | ex. My Video
+    video_url: '<video_url>', // REQUIRED | string | https://youtu.be/12345ABC
+    visible: '<visible>', // REQUIRED | boolean | ex. true
   }
 });
 ```

@@ -20,18 +20,22 @@ Promotions do not have a solid definition at the moment and are likely to be def
 ## Javascript Code
 
 ```js
+// When:
+// User sees a promotion link
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "view_promotion",
   ecommerce: {
-    facets: "<facets>",
-    item_id: "<item_id>",
-    list_type: "<list_type>",
-    search_term: "<search_term>",
-    search_type: "<search_type>",
-    index: "<index>",
-    items: "<items>"
+    facets: "<facets>", // optional | string - double delimited (:)(~) | ex. category:skin_health~featured_as:best_seller
+    item_id: "<item_id>", // recommended | string | ex. 12345
+    list_type: "<list_type>", // optional | string | ex. cards, carousel, popular_products, search_results
+    search_term: "<search_term>", // optional | string | ex. sunscreen
+    search_type: "<search_type>", // optional | optional | ex. site, filter_by_group
+    index: "<index>", // REQUIRED | integer | ex. 5
+    items: "<items>" // REQUIRED | array | ex. [{item_id: "test"}]
   }
 });
 ```

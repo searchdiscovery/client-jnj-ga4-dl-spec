@@ -5,19 +5,23 @@ Fire whenever a refund is issued.
 ## Javascript Code
 
 ```js
+// When:
+// User refund is issued
+
+// Code:
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "refund",
   ecommerce: {
-    affiliation: "<affiliation>",
-    coupon: "<coupon>",
-    currency: "<currency>",
-    items: "<items>",
-    shipping: "<shipping>",
-    tax: "<tax>",
-    transaction_id: "<transaction_id>",
-    value: "<value>"
+    affiliation: "<affiliation>", // recommended | string | ex. walgreens | pattern: ^[A-Za-z0-9_]+$	
+    coupon: "<coupon>", // recommended | string | ex. SUMMER_FUN | pattern: ^[A-Za-z0-9_]+$ 
+    currency: "<currency>", // REQUIRED | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3
+    items: "<items>", // recommended | array | ex. [{item_id: "test"}]
+    shipping: "<shipping>", // recommended | number | ex. 3.33 | pattern: ^\d\.\d\d$	| min. 0.00
+    tax: "<tax>", // recommended | number | ex. 1.11 | pattern: ^\d\.\d\d$	| min. 0.00
+    transaction_id: "<transaction_id>", // REQUIRED | string | T12345
+    value: "<value>" // REQUIRED | number | ex. 7.77 | pattern: ^\d\.\d\d$	| min. 0.00
   }
 });
 ```

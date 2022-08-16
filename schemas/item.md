@@ -9,7 +9,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   // Global
   "affiliation": "<affiliation>",
   "currency": "<currency>",
-  "gtin": "<gtin>",
+  "item_gtin": "<gtin>",
   "item_brand": "<item_brand>",
   "item_category": "<item_category>",
   "item_id": "<item_id>",
@@ -17,7 +17,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "item_variant": "<item_variant>",
   "price": "<price>",
   "quantity": "<quantity>",
-  "sku": "<sku>",
+  "item_sku": "<sku>",
 
   // Contextual
   "coupon": "<coupon>",

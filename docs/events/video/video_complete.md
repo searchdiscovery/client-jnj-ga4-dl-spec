@@ -1,4 +1,4 @@
-# Video Progress
+# Video Complete
 
 Fire whenever a video ends. This will usually be picked up automatically by GTM on desktop but may need to be manually sent on mobile.
 

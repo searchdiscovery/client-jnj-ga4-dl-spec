@@ -12,7 +12,7 @@ Fire whenever a video progresses past 10%, 25%, 50%, and 75% duration time. This
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'video_start',
+  event: 'video_progress',
   event_data: {
     video_current_time: '<video_current_time>', // REQUIRED | string | ex. 15
     video_duration: '<video_duration>', // REQUIRED | string | ex. 600

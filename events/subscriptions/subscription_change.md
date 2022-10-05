@@ -10,7 +10,7 @@ TBD
 
 ```js
 // When:
-// User changes their subscription (other than a subscribe or unsubscribe)
+// User changes their subscription (other than a subscribe or unsubscribe event)
 
 // Code:
 window.dataLayer = window.dataLayer || [];

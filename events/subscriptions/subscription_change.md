@@ -1,4 +1,4 @@
-# Subscribe
+# Subscription Change
 
 Fire whenever a user changes their subscription (other than a subscribe or unsubscribe event).
 

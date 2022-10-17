@@ -12,7 +12,7 @@ Send when a user views their wishlist.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "wishlist_viewed",
+  event: "view_wishlist",
   ecommerce: {
     items: "<items>", // REQUIRED | array | ex. [{item_id: "test"}]
   }

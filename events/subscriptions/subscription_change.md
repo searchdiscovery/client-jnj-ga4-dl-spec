@@ -2,9 +2,6 @@
 
 Fire whenever a user changes their subscription (other than a subscribe or unsubscribe event).
 
-## HTML Data Attributes
-
-TBD
 
 ## Javascript Code
 

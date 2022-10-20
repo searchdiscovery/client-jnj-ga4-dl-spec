@@ -68,7 +68,6 @@ dataLayer.push({
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
 |user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|
 |gtm_tag_name|string|recommended|The name of the GTM tag that fired the event. Set in GTM Client Side container|Analytics - GA4 - Event - Add Payment Info|
-|user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|
 |fabrick_id|string|contextual|Returns the response from the Fabrick API. Set inside the GTM Client Side Container|E1:ghUp7MK1uOv_2NcinhohV45QFbgL6zkEVANkRDRVmQbsbdDSFKIKOd-TObMfEftWQykvccnleFAH-6ZXITXmbccxuYzbrMbT-7fvefaWi0U|
 |server_client_id|string|contextual|This is set in the ServerSide GTM container. Set to the cookie identifier set by SS container the key path client_id.  Do not register in GA UI due to high cardinality issue.|rXX6XnXXgk67yKKU.1981467981|
 |browser_client_id|string|contextual|This is set in the ServerSide GTM container. Set to the cookie identifier within the web experience, or the app instance ID within a native mobile app.  Known as the "user_pseudo_id" in BigQuery.  Do not register in UI due to high cardinality issue.|1166195461.1660583959|

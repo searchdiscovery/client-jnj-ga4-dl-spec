@@ -32,13 +32,13 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: "cta_click_wtb",
   event_data: {
-    affiliation: "<affiliation">, //recommeded | string | ex. Amazon.com, Walmart.com, CVS
+    affiliation: "<affiliation>", //recommeded | string | ex. Amazon.com, Walmart.com, CVS
     category: "<category>", // optional | string | ex. find online, find locally
-    link_text: "<link_text>", // REQUIRED | string | ex. Add to Cart, Buy Now, Get Directions, store hours
-    link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/link?test=testing
-    discount: "<discount">, // conditional | number | ex. 2.22
+    discount: "<discount>", // conditional | number | ex. 2.22
     item_id: "<item_id>", // REQUIRED | string | ex. SKU_12345
     item_name: "<item_name>", // REQUIRED | string | ex. jeggings
+    link_text: "<link_text>", // REQUIRED | string | ex. Add to Cart, Buy Now, Get Directions, store hours
+    link_url: "<link_url>", // REQUIRED | string | ex. https://www.example.com/link?test=testing
     price: "<price>", // recommended | string | ex. 9.99
   }
 });

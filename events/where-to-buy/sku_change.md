@@ -12,7 +12,7 @@ Fire whenever a user successfully changes the sku they are looking at within the
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null, user_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: "change_item_id_wtb",
+  event: "change_item_sku_wtb",
   event_data: {
     component_type: "<component_type>", // REQUIRED | string | ex. PriceSpider, ChannelAdvisor
     item_brand: "<item_brand>", // REQUIRED | string | ex. Tylenol, Zyrtec, Listerine

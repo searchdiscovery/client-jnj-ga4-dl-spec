@@ -18,5 +18,14 @@ For instance, the main page `<header>` tag might have the `data-layer-region="he
 
 See the **[data-attributes](data-attributes)** folder for detailed implementation guidelines.
 
+## Conventions
+
+### Code samples
+We defer to stylistic preferences in the target codebase, but here are the JavaScript conventions we use in our code samples:
+
+- Double quotes instead of single quotes in object properties
+- No trailing commas
+- Semicolons required
+
 ## Questions/Comments
 For any questions or comments, please contact charlie.tysse@searchdiscovery.com.

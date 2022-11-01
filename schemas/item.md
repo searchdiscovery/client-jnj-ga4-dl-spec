@@ -14,24 +14,24 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "item_category": "<item_category>",
   "item_id": "<item_id>",
   "item_name": "<item_name>",
+  "item_upc": "<item_upc>",
   "item_variant": "<item_variant>",
   "price": "<price>",
   "quantity": "<quantity>",
-  "sku": "<sku>",
 
   // Contextual
   "coupon": "<coupon>",
   "discount": "<discount>",
   "creative_name": "<creative_name>",
   "creative_slot": "<creative_slot>",
+  "index": "<index>",
   "item_list_id": "<item_list_id>",
   "item_list_name": "<item_list_name>",
   "item_out_of_stock": "<item_out_of_stock>",
-  "index": "<index>",
+  "item_subscription_type": "<promotion_id>"
   "location_id": "<location_id>",
   "promotion_id": "<promotion_id>",
-  "promotion_name": "<promotion_name>",
-  "item_subscription_type": "<promotion_id>"
+  "promotion_name": "<promotion_name>"
 }
 ```
 
@@ -54,10 +54,10 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |item_name|string|required|Item Name (context-specific).|jeggings|
 |item_out_of_stock|string|contextual|Send as true if an item is out of stock. You should exclude this parameter if the item is in stock.|true|
 |item_subscription_type|string|recommended|Item Subscription Type. The subscription type when a user chooses to subscribe to a product being sent multiple times after their purchase.|3-months, 6-months, 9-months|
+|item_upc|string|contextual|UPC ID of the product a customer would be calling a store about.|`012345678905`|
 |item_variant|string|recommended|The variant of the item.|Black|
 |location_id|string|recommended if the item is associated with a physical location|The location associated with the event. If possible, set to the Google Place ID that corresponds to the associated item. Can also be overridden to a custom location ID string.|L_12345|
 |price|number|recommended|The monetary price of the item, in units of the specified currency parameter.|9.99|
 |promotion_id|string|either `promotion_id` or `promotion_name` is required if item is being sent with a promotion event|The ID of a product promotion. |P_12345|
 |promotion_name|string|either `promotion_id` or `promotion_name` is required if item is being sent with a promotion event|The name of a product promotion. One of `promotion_id` or `promotion name` is required.|Summer Sale|
 |quantity|integer|recommended|Item quantity.|1|
-|sku|string|recommended|The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service|7702031413424|

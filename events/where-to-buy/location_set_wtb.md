@@ -1,6 +1,6 @@
 # Location Set WTB
 
-Fire whenever a user successfully sets thier location. 
+Fire whenever a user successfully sets their location. 
 
 ## Javascript Code
 
@@ -12,12 +12,10 @@ Fire whenever a user successfully sets thier location.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null, user_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'location_set_wtb', // **Unknown**
-  },
+  event: "location_set_wtb"
 });
 ```
 
 ## Variable Definitions
 
-|Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+This event has no parameters.

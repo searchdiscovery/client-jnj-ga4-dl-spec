@@ -27,7 +27,7 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|facets|delimited string|recommended|A delimited string of key/value pairs representing the facets that were applied to this search|need:skin health\~skin_concern:acne\~featured_as:best_seller|
-|number_of_items|integer|recommended|The total number of search results found|324|
-|search_term|string|required|The final search term submitted after any correction has been performed|sunscreen|
-|type|string|required|The type of search performed|ecp_locator,filter_by_group,product,site|
+|`facets`|delimited string|recommended|A delimited string of key/value pairs representing the facets that were applied to this search|`need:skin health~skin_concern:acne~featured_as:best_seller`|
+|`number_of_items`|integer|recommended|The total number of search results found|`324`|
+|`search_term`|string|required|The final search term submitted after any correction has been performed|`sunscreen`|
+|`search_type`|string|required|The type of search performed|`ecp_locator`,`filter_by_group`,`product`,`site`|

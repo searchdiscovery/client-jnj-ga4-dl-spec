@@ -2,7 +2,7 @@
 
 Fire whenever a user sees multiple product links in a list that forward the user to the product detail page. 
 
-This event should also be fired for the "Filter By Group" component when the list is initially displayed or updated after a facet is applied...but only when that component contains products.
+This event should also be fired for the "Filter By Group" component when the list is initially displayed, or when a user applies a facet (but only when that component contains one or more products).
 
 ## Javascript Code
 

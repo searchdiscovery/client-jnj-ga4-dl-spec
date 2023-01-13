@@ -1,5 +1,8 @@
 # Filter Item Category
 
+> **Note**
+> This event has been deprecated in favor of [view_search_results](../search/view_search_results.md) or [view_item_list](./view_item_list.md).
+
 Fire whenever a user clicks on a Product Category filter.
 
 ## Javascript Code

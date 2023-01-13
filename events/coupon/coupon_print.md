@@ -1,4 +1,4 @@
-# Print Coupon
+# Coupon Print
 
 Fire whenever a user attempts to print a coupon.
 
@@ -12,7 +12,7 @@ Fire whenever a user attempts to print a coupon.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'print_coupon',
+  event: 'coupon_print',
   event_data: {
     coupons: '<coupons>', // REQUIRED | string - delimited (~) | ex. couponName1~couponName2~couponName3	
   }

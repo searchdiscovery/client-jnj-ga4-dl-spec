@@ -5,7 +5,7 @@ edit_uri: edit/master/
 theme:
   name: material
   palette:
-    primary: red
+    primary: #019881
   features:
     - content.code.annotate
     - navigation.instant

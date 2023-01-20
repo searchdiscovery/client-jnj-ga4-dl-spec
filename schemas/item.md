@@ -49,7 +49,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |`index`|number|conditional|The index/position of the item in a list.|`2`|
 |`item_brand`|string|recommended|Item brand|`Gucci`|
 |`item_category`|string|recommended|Item Category (context-specific). `item_category2` through `item_category5`can also be used if the item has many categories.|`pants`|
-|`item_id`|string|required|Item ID (context-specific). `item_id` should be the item's UPC code, if available. If UPC is not available, `item_id` should be the item's SKU ID. If neither UPC nor SKU are avaialable, the value should be an empty string.|`UPC12345`, `SKU12345`, `""`|
+|`item_id`|string|required|Item ID (context-specific). `item_id` should be the item's UPC code, if available. If UPC is not available, `item_id` should be the item's SKU ID. If neither UPC nor SKU are available, the value should be an empty string.|`UPC12345`, `SKU12345`, `""`|
 |`item_list_id`|string|contextual|The computer-readable machine name of the list the item showed up in (if sent with a view_item_list event). Use UUID provided by the component if no more specific ID is available.|`12345abcde12345`|
 |`item_list_name`|string|contextual|The human-readable name of the item list the item showed up in (if sent with a view_item_list event). If one is not available, populate with numerical index of which list this is on the page (1-indexed). For `filter_by_group` component, use that value.|`filter_by_group`, `recommended_products`, `recently_viewed_products`|
 |`item_name`|string|required|Item Name (context-specific).|`jeggings`|

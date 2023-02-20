@@ -1,4 +1,4 @@
-# Video Livestream Completed
+# Video Livestream Complete
 
 Fire whenever a user starts a live stream video. This will usually be picked up automatically by GTM on desktop but may need to be manually sent on mobile.
 
@@ -12,7 +12,7 @@ Fire whenever a user starts a live stream video. This will usually be picked up 
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'video_livestream_completed',
+  event: 'video_livestream_complete',
   event_data: {
     video_current_time: '<video_current_time>', // REQUIRED | string | ex. 15
     video_duration: '<video_duration>', // REQUIRED | string | ex. 600

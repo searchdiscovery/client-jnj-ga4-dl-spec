@@ -17,7 +17,7 @@ dataLayer.push({
     video_current_time: '<video_current_time>', // REQUIRED | string | ex. 15
     video_duration: '<video_duration>', // REQUIRED | string | ex. 600
     video_percent: '<video_percent>', // REQUIRED | string | ex. 15
-    video_provider: '<video_provider>', // REQUIRED | string | ex. youtube, vimeo, firework
+    video_provider: '<video_provider>', // REQUIRED | string | ex. youtube, vimeo, firework, twitch
     video_title: '<video_title>', // REQUIRED | string | ex. My Video
     video_url: '<video_url>', // REQUIRED | string | https://youtu.be/12345ABC
     visible: '<visible>', // REQUIRED | boolean | ex. true
@@ -31,7 +31,7 @@ dataLayer.push({
 |video_current_time|string|required|The current time of the video viewed.|15|
 |video_duration|string|required|The total duration of the video.|600|
 |video_percent|string|required|The current percent of the video viewed.|15|
-|video_provider|string|required|The video provider.|youtube, vimeo|
+|video_provider|string|required|The video provider.|youtube, vimeo, firework, twitch|
 |video_title|string|required|The title of the video.|Walkthrough of the Google Analytics 4 User Interface|
 |video_url|string|required|The URL of the video.|https://youtu.be/RhS85WQiBLU|
 |visible|boolean|required|Is the video visible on the page.|true|

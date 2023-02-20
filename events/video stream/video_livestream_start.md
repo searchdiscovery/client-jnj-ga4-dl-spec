@@ -1,4 +1,4 @@
-# Video Livestrem Star
+# Video Livestream Start
 
 Fire whenever a user starts a live stream video. This will usually be picked up automatically by GTM on desktop but may need to be manually sent on mobile.
 

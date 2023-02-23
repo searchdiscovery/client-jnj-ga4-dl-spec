@@ -64,7 +64,6 @@ dataLayer.push({
 |category[2-5]|string|optional|Optional fields that enable you to assign this link additional subcategories beyond category.|cta_links, wtb_links|
 |identifier|string|optional|Optional field that enables you to assign this link a specific ID. Used primarily when you need to identify a link and component_ancestry, region_ancestry, link_classes, link_id, link_text, and link_url are not sufficient to do that.||
 |link_classes|string|required|The list of HTML/CSS classes applied to the link.|button-red|
-|link_domain|string|required|The domain of the link.|example.com|
 |link_id|string|required|The HTML/CSS ID of the link.|submit-button|
 |link_text|string|required|The full text of the link.|click here|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|

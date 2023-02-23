@@ -1,6 +1,6 @@
 # Video Livestream Exit
 
-Fire whenever a user exits a live stream video. This will usually be picked up automatically by GTM on desktop but may need to be manually sent on mobile.
+Fire whenever a user exits a live stream video.
 
 ## Javascript Code
 
@@ -32,6 +32,6 @@ dataLayer.push({
 |video_duration|string|required|The total duration of the video.|600|
 |video_percent|string|required|The current percent of the video viewed.|15|
 |video_provider|string|required|The video provider.|youtube, vimeo, firework, twitch|
-|video_title|string|required|The title of the video.|Walkthrough of the Google Analytics 4 User Interface|
+|video_title|string|required|The title of the video.||
 |video_url|string|required|The URL of the video.|https://youtu.be/RhS85WQiBLU|
 |visible|boolean|required|Is the video visible on the page.|true|

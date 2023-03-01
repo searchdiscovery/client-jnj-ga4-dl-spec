@@ -23,6 +23,7 @@ dataLayer.push({
   user_data: {
     user_id: '<user_id>', // optional | string | ex. 12345
     user_login_state: '<user_login_state>', // optional | string | ex. authenticated, anonymous	
+    user_type: '<user_type>' // optional | string | ex. new, returning
     event_form_custkey: '<SFMC_CustomerKey>', // REQUIRED | string | ex. 12345...
     event_form_hashemail: '<HashedEmail>' // REQUIRED | string | ex. b642b4217b34b1e8d3bd915fc65c4452 (MD5)
   }
@@ -38,5 +39,6 @@ dataLayer.push({
 |type|string|required|The form type. This will act as a filtering mechanism in reporting to enable analysts to view form droppoff funnels. It can also act as an internal aid in firing additional events if necessary. For instance, lead-generating forms require a `generate_lead` event to be fired alongside `form_complete`, and that could be written into the logic based upon this field.|contact, lead_generation|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
 |user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|  
+|user_type|string|contextual|Set on all events with the authentication type of the visitor are they new or returning|new, returning|  
 |event_form_custkey|string|required|This is the ID created by Salesforce Marketing cloud||
 |event_form_hashemail|string|required|Converts the submitted email into hased format|

@@ -21,6 +21,7 @@ dataLayer.push({
   },
   user_data: {
     user_id: "<user_id>", // recommended | string | ex. 1234567890
+    user_type: '<user_type>' // optional | string | ex. new, returning
   }
 });
 ```
@@ -32,3 +33,4 @@ dataLayer.push({
 |method|string|recommended|The method used to login.|google, linkedin, email and password|
 |user_id|string|recommended|The user identifier|1234567890|
 |user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|
+|user_type|string|contextual|Set on all events with the authentication type of the visitor are they new or returning|new, returning|

@@ -2,10 +2,6 @@
 
 Fire whenever a user unsubscribes from an email or product.
 
-## HTML Data Attributes
-
-TBD
-
 ## Javascript Code
 
 ```js
@@ -16,7 +12,7 @@ TBD
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'subscribe',
+  event: 'unsubscribe',
   event_data: {
     identifier: '<identifier>', // recommended | string | ex. neutrogena_newsletter_123, jnj_promos_123
     name: '<name>', // REQUIRED | string | ex. neutrogena_newsletter, jnj_promos

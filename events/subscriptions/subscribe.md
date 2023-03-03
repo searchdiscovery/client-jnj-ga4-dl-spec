@@ -2,10 +2,6 @@
 
 Fire whenever a user subscribes to an email or product.
 
-## HTML Data Attributes
-
-TBD
-
 ## Javascript Code
 
 ```js

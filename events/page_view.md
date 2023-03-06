@@ -43,6 +43,7 @@ dataLayer.push({
   },
   user_data: {
     user_id: '<user_id>', // optional | string | ex. 12345 
+    user_type: '<user_type>' // optional | string | ex. new, returning
   }
 });
 ```
@@ -66,4 +67,5 @@ dataLayer.push({
 |site_section|string|recommended|The section of the site that the current page resides in.|products|
 |site_section[2-5]|string|recommended|The subsections of the site that the current page resides in.|sun protection products|
 |user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
+|user_type|string|contextual|Set on all events with the authentication type of the visitor are they new or returning|new, returning|
 |user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|

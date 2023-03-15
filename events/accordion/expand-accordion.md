@@ -2,13 +2,13 @@
 
 Fire whenever a user expands an accordion item.
 
-If using data attributes, the `data-layer-event` attribute should be dynamically updated from `collapse_accordion` to `expand_accordion` whenever the accordion is collapsed so this event will fire.
+If using data attributes, the `data-layer-event` attribute should be dynamically updated from `collapse_accordion` to `expand_accordion` whenever the accordion is expanded so this event will fire.
 
 ## HTML Data Attributes
 
 ```html
 <a href="<link_url>"
-  data-layer-event="collapse_accordion",
+  data-layer-event="expand_accordion",
   data-layer-identifier="<identifier>"
   data-layer-name="<name>"
   data-layer-heading="<heading>"
@@ -26,7 +26,7 @@ If using data attributes, the `data-layer-event` attribute should be dynamically
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: "collapse_accordion",
+  event: "expand_accordion",
   event_data: {
     identifier: "<identifier>", // REQUIRED | string | ex. 12345abcde12345
     name: "<name>", // optional | string | ex. FAQs, 2

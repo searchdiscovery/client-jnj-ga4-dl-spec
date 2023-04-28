@@ -27,7 +27,7 @@ dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   event: 'share',
   event_data: {
-    content_type: '<content_type>', // REQUIRED | string | type of content | ex. blog, landing, content, product
+    content_type: '<content_type>', // REQUIRED | string | type of content | ex. blog, landing, content, product, video, livestream event
     item_id: '<item_id>', // recommended | string | product primary ID | ex. SKU CW21001 or UPC 012345678905 (12 digits)
     method: '<method>' // REQUIRED | string | social platform | ex. email, facebook, twitter
   }
@@ -38,6 +38,6 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|content_type|string|required|The type of content shared|blog, content, home, landing, product|
+|content_type|string|required|The type of content shared|blog, content, home, landing, product, video, livestream event|
 |item_id|string|recommended|The product primary ID (SKU or UPC) if it is a product being shared|123456|
 |method|string|required|The platform used to share content|email, facebook, twitter|

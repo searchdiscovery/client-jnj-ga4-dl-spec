@@ -4,7 +4,7 @@ Fire whenever a user is presented with a form on a page.
 
 ## HTML Data Attributes
 
-This could be done with data attributes and detected via GTM at DOM Ready, but if a form is dynamically added to the page at any time, it would not be picked up. As such, manually firing the data layer push whenever a form is loaded is a more reliable approach. Note only fire the dataLayer event when form is in view of the users - example footer forms.
+This could be done with data attributes and detected via GTM at DOM Ready, but if a form is dynamically added to the page at any time, it would not be picked up. As such, manually firing the data layer push whenever a form is loaded is a more reliable approach. Note only fire the dataLayer event when the form is viable to the user. - example footer forms.
 
 ## Javascript Code
 

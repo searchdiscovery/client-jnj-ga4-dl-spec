@@ -1,7 +1,7 @@
 # Consumer Health Global GTM Coode
 
 
-This document is a quick reference to implement the Global GTM Container across all Johnson & Johnson sites. For any questions regarding this content please contact Steven Rowe - srowe32@its.jnj.com
+This document is a quick reference to implement the Global GTM Container across all Johnson & Johnson sites. For any questions regarding this content please contact Steven Rowe - srowe32@kenvue.com
 
 ## Javascript Code
 

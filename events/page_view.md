@@ -1,3 +1,7 @@
+layout: page
+title: "Page View"
+permalink: /events/page_view
+
 # Page View
 
 Fire whenever a user loads in a new page, whether that is done synchronously or asynchronously.

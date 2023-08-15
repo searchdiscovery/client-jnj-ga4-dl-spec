@@ -1,3 +1,6 @@
+> **Warning**
+> This spec has been deprecated. The new spec is at [searchdiscovery/client-kenvue-ga4-dl-spec](https://github.com/searchdiscovery/client-kenvue-ga4-dl-spec).
+
 # Johnson and Johnson GA4 Data Layer and Data Attribute Spec
 
 ## Overview

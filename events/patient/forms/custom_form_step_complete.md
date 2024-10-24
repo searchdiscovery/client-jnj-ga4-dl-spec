@@ -15,7 +15,8 @@ dataLayer.push({
   event: 'custom_form_step_complete',
   event_data: {
     form_name: <form_name>, 
-    step_name: <step_name>, 
+    step_name: <step_name>,
+    step_number: <step_number>,
     insurance_coverage: <insurance_coverage>, 
     insurance_assistance: <insurance_assistance>,
     has_savings_card: <has_savings_card>, 

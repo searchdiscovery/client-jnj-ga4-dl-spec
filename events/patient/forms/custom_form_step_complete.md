@@ -1,6 +1,6 @@
 # Form Step Complete
 
-Fire when a user completes a form. This is to help capture when users are engaging with components and can be helped to understand drop-off based on features.
+Send when a user completes the form step (at button click)
 
 ## Javascript Code
 

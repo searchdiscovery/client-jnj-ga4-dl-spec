@@ -1,30 +1,29 @@
-# Form Complete
+# Form Step Complete
 
-Fire whenever a user successfully completes a form. 
-
-This event is fired when form input is successfully received and process. This is in contrast to `form_error` which occurs when a submission is attempted but an error occurs and the form input is not recieved and processed.
+Fire when a user completes a form. This is to help capture when users are engaging with components and can be helped to understand drop-off based on features.
 
 ## Javascript Code
 
 ```js
 // When:
-// User successfully completes a form and data is received and processed
+// Fire when a user engages with a field in a form.
 
 // Code:
 window.dataLayer = window.dataLayer || [];
-dataLayer.push({ event_data: null, user_data: null });  // Clear the previous event_data object.
+dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'form_complete',
+  event: 'form_view',
   event_data: {
-    identifier: '<identifier>', // recommended | string | ex. ecp_locator, free_trial	
-    name: '<name>', // REQUIRED | string | ex. ecp_locator, free_trial	
-    type: '<type>' // REQUIRED | string | ex. contact, lead_generation	
-  },
-  user_data: {
-    user_id: '<user_id>', // optional | string | ex. 12345
-    user_login_state: '<user_login_state>', // optional | string | ex. authenticated, anonymous	
-    event_form_custkey: '<SFMC_CustomerKey>', // REQUIRED | string | ex. 12345...
-    event_form_hashemail: '<HashedEmail>' // REQUIRED | string | ex. b642b4217b34b1e8d3bd915fc65c4452 (MD5)
+    form_name: <form_name>, 
+    step_name: <step_name>, 
+    insurance_coverage: <insurance_coverage>, 
+    insurance_assistance: <insurance_assistance>,
+    has_savings_card: <has_savings_card>, 
+    brand: <brand>, 
+    person: <person>, 
+    prescription_status: <prescription_status>, 
+    condition: <condition>, 
+    pathway: <pathway>
   }
 });
 ```
@@ -33,10 +32,14 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|identifier|string|recommended|The form machine-readable name. This should be a unique value specific to this form, if one exists. If one does not exist, this can also be populated with the same value as the <name>.|ecp_locator, free_trial|
-|name|string|required|The form human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the form with. It should be lowercase snake_case.|ecp_locator, free_trial|
-|type|string|required|The form type. This will act as a filtering mechanism in reporting to enable analysts to view form droppoff funnels. It can also act as an internal aid in firing additional events if necessary. For instance, lead-generating forms require a `generate_lead` event to be fired alongside `form_complete`, and that could be written into the logic based upon this field.|contact, lead_generation|
-|user_id|string|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456|
-|user_login_state|string|contextual|Set on all events with the authentication status of the visitor.|authenticated, anonymous|  
-|event_form_custkey|string|required|This is the ID created by Salesforce Marketing cloud||
-|event_form_hashemail|string|required|Converts the submitted email into hased format|
+|form_name|string|required|Used with the "form_complete", or "form_error" events, this parameter returns the form name.|Digital Enrollment Form|
+|step_name|string|required|The name of the step users are interacting with|Support Personalization|
+|step_number|integer|required|Step number in a predefined form flow. Should correspond to step number shown to users on page|1,2,3|
+|insurance_coverage|string|required|The type of insurance coverage for the patient|
+|insurance_assistance|string|required|Insurance assistance selection for the patient|
+|has_savings_card|string|required|Indicates whether patient already has a savings card|
+|brand|string|required|Prescription drug that patients are familiar with|darzalex, erleada|
+|person|string|required|Persona of user, e.g. patient or caregiver|patient, caregiver|
+|prescription_status|string|required|Currently prescribed or not currently prescribed|currently prescribed darzalex|
+|condition|string|required|Medical condition that the patient is seeking help with|Moderate to Severe Plaque Psoriasis|
+|pathway|string|required|Pathway used. e.g. Full Program, Cost Support Only, Guide Only.|dedicatedGuide. costSupport|

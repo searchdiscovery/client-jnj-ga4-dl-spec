@@ -13,7 +13,6 @@ dataLayer.push({
     link_url: <link_url>, 
     link_text: <link_text>,
     element_name: <element_name>,
-    module_name: <module_name>, 
     brand: <brand>, 
     person: <person>, 
     prescription_status: <prescription_status>, 
@@ -28,10 +27,8 @@ dataLayer.push({
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |element_name|string|required|Name of site element a user interacted with.|
-|module_name|string|required|Name of content module on the site|
 |link_url|string|required|The HREF of the link interacted with.|
 |link_text|string|required|The text of the link interacted with.|
-|module_name|string|required|Name of content module on the site|
 |brand|string|required|Prescription drug that patients are familiar with|darzalex, erleada|
 |person|string|required|Persona of user, e.g. patient or caregiver|patient, caregiver|
 |prescription_status|string|required|Currently prescribed or not currently prescribed|currently prescribed darzalex|

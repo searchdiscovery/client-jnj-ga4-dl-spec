@@ -27,8 +27,8 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|step_name|string|required|The name of the step users are interacting with|Support Personalization|
-|step_number|integer|required|Step number in a predefined form flow. Should correspond to step number shown to users on page|1,2,3|
+|element_name|string|required|Name of site element a user interacted with.|
+|module_name|string|required|Name of content module on the site|
 |link_url|string|required|The HREF of the link interacted with.|
 |link_text|string|required|The text of the link interacted with.|
 |module_name|string|required|Name of content module on the site|

@@ -27,7 +27,6 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-
 |file_extension|string|recommended|The file extension of the file being downloaded.|pdf|
 |link_text|string|required|The full text of the link.|click here|
 |link_url|string|required|The full URL of the link.|https://www.example.com/form|

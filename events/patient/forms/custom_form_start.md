@@ -4,9 +4,7 @@ Fire whenever a user starts filling out a form.
 
 This event is generally fired after user input in the first form field. Historically this has been done via an HTMLElement change event on a form field, though it could be done via an HTMLElement focus event on a form field instead if that proves easier to implement. It should only be fired once per form, but if that is too technically complicated to implement, it can be limited on the GTM side instead.
 
-## HTML Data Attributes
 
-This could be done with data attributes and detected via GTM at DOM Ready, but if a form is dynamically added to the page at any time, it would not have the listeners properly set up. As such, manually firing the data layer push whenever a form is submitted is a more reliable approach.
 
 ## Javascript Code
 

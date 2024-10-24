@@ -25,7 +25,7 @@ dataLayer.push({
 
 ## Variable Definitions
 
-|Field|Type|Required?|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+|Field|Type|Required|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 |file_extension|string|recommended|The file extension of the file being downloaded.|pdf|

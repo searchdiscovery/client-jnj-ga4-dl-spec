@@ -8,8 +8,6 @@ For example, if a `<button>` tag is used in combination with Javascript to repre
 ## Javascript Code
 
 ```js
-// When:
-// User clicks a non anchor tag used for a file download, i.e. <button>
 
 // Code
 window.dataLayer = window.dataLayer || [];

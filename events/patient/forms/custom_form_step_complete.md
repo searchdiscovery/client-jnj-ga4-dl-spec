@@ -12,7 +12,7 @@ Fire when a user completes a form. This is to help capture when users are engagi
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'form_view',
+  event: 'custom_form_step_complete',
   event_data: {
     form_name: <form_name>, 
     step_name: <step_name>, 

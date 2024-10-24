@@ -14,7 +14,7 @@ This is in contrast to `form_complete` which occurs when a submission succeeds.
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'form_error',
+  event: 'error',
   event_data: {
     error_message: '<error_message>', // REQUIRED | string | ex. Phone number should follow the format (xxx) xxx-xxxx, Must be a valid email address
     error_type: '<error_type>' // recommended | string | ex. form_field_validation, server_error	

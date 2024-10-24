@@ -12,7 +12,7 @@ Fire when a user engages with a field in a form. This is to help capture when us
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'form_view',
+  event: 'custom_form_field_click',
   event_data: {
     form_name: <form_name>, 
     step_name: <step_name>, 

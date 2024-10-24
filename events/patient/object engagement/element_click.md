@@ -1,6 +1,8 @@
+## Element Click
+
+ Fire when a user engages with a field in a form.
+
 ```js
-// When:
-// Fire when a user engages with a field in a form.
 
 // Code:
 window.dataLayer = window.dataLayer || [];
